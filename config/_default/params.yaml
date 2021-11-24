@@ -20,8 +20,8 @@ twitter: ''
 
 # Contact (edit or remove options as required)
 
-email: test@example.org
-phone: 888 888 88 88
+email: james.brophy@mcgill.ca
+phone: 514 934-1934
 address:
   street: 450 Serra Mall
   city: Stanford
@@ -41,7 +41,7 @@ contact_links:
   - icon: twitter
     icon_pack: fab
     name: DM Me
-    link: 'https://twitter.com/Twitter'
+    link: 'https://twitter.com/brophyj'
   - icon: skype
     icon_pack: fab
     name: Skype Me
@@ -157,4 +157,4 @@ cms:
   local_backend: false
 icon:
   pack:
-    ai: false
+    ai: true

@@ -36,7 +36,7 @@ experience:
     description: |2-
         Responsibilities include:
         
-        * Teaching [Intermediate Epidemiology - Syllabus Winter 2020]("files/cv_short_1.pdf")
+        * Teaching [Intermediate Epidemiology - Syllabus Winter 2020](https://www.brophyj.com/files/syllabus_EPIB_603.pdf)
         * Research
         
   - title: Cardiologist

@@ -16,18 +16,39 @@ subtitle:
 # - Add/remove as many `feature` blocks below as you like.
 # - For available icons, see: https://wowchemy.com/docs/page-builder/#icons
 feature:
-- description: 90%
+- description: 33%
+  icon: fas fa-user-md
+  icon_pack: fas
+  name: MD
+- description: 33%
+  icon: chart-line
+  icon_pack: fas
+  name: Epidemiology
+- description: 15%
   icon: r-project
   icon_pack: fab
   name: R
-- description: 100%
-  icon: chart-line
-  icon_pack: fas
-  name: Statistics
 - description: 10%
-  icon: camera-retro
+  icon: fas fa-laptop-code
   icon_pack: fas
-  name: Photography
+  name: Bayesian Statistics
+- description: 7%
+  icon: fas fa-paw
+  icon_pack: fas
+  name: Gordon setter
+- description: 1%
+  icon: fas fa-palette
+  icon_pack: fas
+  name: Painting
+  
+  
+  
+design:
+  # Choose how many columns the section has. Valid values: '1' or '2'.
+  columns: '4'
+  
+font_size: font-size:small
+css_class: ""  
 
 # Uncomment to use emoji icons.
 #- icon: ':smile:'

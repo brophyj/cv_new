@@ -7,11 +7,11 @@ main:
   - name: Home
     url: '#about'
     weight: 1
-  - name: Blog posts
-    url: post/
+  - name: Experience
+    url: '#experience'
     weight: 2
-  - name: Books
-    url: bookdown/
+  - name: Posts
+    url: post/
     weight: 3
   - name: Publications
     url: publication/

@@ -22,25 +22,25 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title = "Professor"
-    company = "McGill University"
-    company_url = "https://www.mcgill.ca"
-    location = "Montreal QC"
-    date_start = "2001-07-01"
-    date_end = ""
-    description = """ Joint appointment Deptartments of Medicine and Epidemiology & Biostatistics       
+  - title: Professor
+    company: McGill University
+    company_url: 'https://www.mcgill.ca'
+    location: Montreal QC
+    date_start: '2001-07-01'
+    date_end: ''
+    description: Joint appointment Deptartments of Medicine and Epidemiology & Biostatistics       
           
   * Short <a href=\"files/cv_short_1.pdf">CV</a>    
-  * Most recent course - Intermediate Epidmeiology (EPIB 603 Winter 2020)  <a href=\"files/syllabus_EPIB_603.pdf">syllabus</a> """
+  * Most recent course - Intermediate Epidmeiology (EPIB 603 Winter 2020)  <a href=\"files/syllabus_EPIB_603.pdf">syllabus</a> 
   
         
-  - title = "Cardiologist"
-    company = "McGill University Health Center"
-    company_url = "https://muhc.ca"
-    location = "Montreal QC"
-    date_start = "2001-07-01"
-    date_end = ""
-    description = """ Non-invasive cardiologist      
+  - title : Cardiologist
+    company: McGill University Health Center
+    company_url: 'https://muhc.ca'
+    location: Montreal QC
+    date_start: '2001-07-01
+    date_end: ''
+    description: Non-invasive cardiologist      
     Clinical responsibilities include:
   
   * Coronary Care Unit (CCU)

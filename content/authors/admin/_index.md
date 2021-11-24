@@ -46,7 +46,7 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: '#contact'  # For a direct email link, use "mailto:test@example.org".
+  link: 'mailto:james.brophy@mcgill.ca'  # For a direct email link, use "mailto:james.brophy@mcgill.ca".
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/brophyj
@@ -79,3 +79,5 @@ user_groups:
 ---
 
 Jay Brophy is a tenured (full) professor with a joint appointment in the Departments of Medicine and Epidemiology and Biostatistics where he works as a clinical cardiologist and does research in cardiovascular epidemiology. His research interests are eclectic and include outcomes research, pharmacoepidemiology, health technology assessment, economic analyses and clinical research which are supported partially through a FRQS chair in health technology assessment and evidence-based medicine. 
+
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "files/cv_short_1.pdf" "newtab" >}}CV{{< /staticref >}}.

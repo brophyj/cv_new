@@ -1,0 +1,67 @@
+---
+title: "Journal Article from 2021"
+authors:
+- admin
+date: "2021-09-01T00:00:00Z"
+doi: "10.1016/j.cjca.2021.03.014"
+
+# Schedule page publish date (NOT publication's date).
+publishDate: "2017-01-01T00:00:00Z"
+
+# Publication type.
+# Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
+# 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
+# 7 = Thesis; 8 = Patent
+publication_types: ["2"]
+
+# Publication name and optional abbreviated publication name.
+publication: "*Canadian Journal of Cardiology - Sept 2021*"
+publication_short: ""
+
+abstract: The limitations of traditional statistical analyses of randomised clinical trials that follow the frequentist inference paradigm have been increasingly noted. This article discusses the Bayesian approach to statistical inference in randomised clinical trials, demonstrating its functioning, utility, and limitations through an examination of current cardiovascular examples. A simplified overview of the mechanics of Bayesian inference and a glossary of the Bayesian terminology is first provided. The duality of the Bayesian approach, providing both an evidential calculus based on the likelihood ratio and a belief calculus that incorporates our prior beliefs with the current data, is presented. Specific cardiovascular trials are reanalysed with Bayesian methods. It is claimed that the Bayesian approach, by providing an enhanced ability to appreciate and model uncertainty, leads to an enriched understanding of the strength and quantification of the evidence, of the distinction between statistical and clinical significance, of the within- and between-trial variability, of subgroup analyses, of the utility of informative priors, and of our ability to synthesise and update our knowledge base. Ultimately, it is argued that the Bayesian approach is more intuitive and transparent, permits enhanced data analysis and interpretation, and may lead to improved decision making not only by trialists but also by practicing clinicians, guideline writers, and even expert regulatory advisory consultants.
+
+
+
+# Summary. An optional shortened abstract.
+summary: An overview of the mechanics of Bayesian inference is first presented, followed by a re-analysis of several landmark cardiovascular trials that highlight the advantages of this approach. 
+
+tags:
+- Source Themes
+featured: false
+
+# links:
+# - name: ""
+#   url: ""
+url_pdf: https://www.onlinecjc.ca/article/S0828-282X(21)00163-X/fulltext
+url_code: ''
+url_dataset: ''
+url_poster: ''
+url_project: ''
+url_slides: ''
+url_source: ''
+url_video: ''
+
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder. 
+image:
+  caption: ''
+  focal_point: ""
+  preview_only: false
+
+# Associated Projects (optional).
+#   Associate this publication with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `internal-project` references `content/project/internal-project/index.md`.
+#   Otherwise, set `projects: []`.
+projects: []
+
+# Slides (optional).
+#   Associate this publication with Markdown slides.
+#   Simply enter your slide deck's filename without extension.
+#   E.g. `slides: "example"` references `content/slides/example/index.md`.
+#   Otherwise, set `slides: ""`.
+slides: example
+---
+
+
+Supplementary notes can be added here, including [code and math](https://github.com/brophyj/cjc_bayes)

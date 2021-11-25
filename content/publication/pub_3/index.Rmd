@@ -31,7 +31,7 @@ featured: false
 
 # links:
 # - name: ""
-#   url: ""
+# url:  'https://www.onlinecjc.ca/article/S0828-282X(21)00163-X/fulltext'
 url_pdf: https://www.onlinecjc.ca/article/S0828-282X(21)00163-X/fulltext
 url_code: ''
 url_dataset: ''
@@ -60,7 +60,7 @@ projects: []
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
-slides: example
+slides: ""
 ---
 
 

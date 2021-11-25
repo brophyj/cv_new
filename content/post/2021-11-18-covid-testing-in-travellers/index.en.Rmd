@@ -24,12 +24,9 @@ knitr::opts_chunk$set(echo = FALSE)
 
 At present, guidelines require mandatory molecular based COVID-19 tests for all travellers entering Canada regardless of their vaccination status. Ever wonder about the (cost) effectiveness of this policy?
 
-Here is data from [Canada Public Health](https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/testing-screening-contact-tracing/summary-data-travellers.htm) for July  to end of October 2021.
+The  above data is from [Canada Public Health](https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/testing-screening-contact-tracing/summary-data-travellers.htm) for July  to end of October 2021.    
 
-<center>
-![](PCR.png)
 
-</center>
 
 This shows that the average test positivity rate for vaccinated travellers is approximately 0.16% or 16 in 10,000. With a laboratory cost of approximately 200 dollars for a RT-PCR test, the cost of identifying these 16 individuals is approximately 2,000,000 dollars. Other costs to this strategy include the time wasted arranging for testing and the illusory sense of security associated with a negative RT-PCR test, given the high false negative rate in the first days following exposure. At what level of detection does this policy of screening all vaccinated travellers no longer make sense? Simply counting those identified without quantifying the overall benefits and costs seems inane. Will we maintain this policy if detection rates fall to 10 in 10,000? 5 in 10,000? 1 in 10,000? What criteria will we use, the most risk averse imaginable? In the realm of clinical medicine, testing of individuals whose prior probability of disease is 0.1%, or even 1%, is strongly discouraged as being inappropriate. Why then should public health get a free pass on this unselective testing?
 

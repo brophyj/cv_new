@@ -60,7 +60,7 @@ links:
   url: https://twitter.com/brophyj
 url_code: ""
 url_pdf: "files/joint_rounds_sept30.pdf"
-url_slides: "slides/debate/index.md"
+url_slides: ""
 url_video: ""
 
 # Markdown Slides (optional).
@@ -75,8 +75,7 @@ slides: debate
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
-projects:
-- internal-project
+projects: ""
 
 # Enable math on this page?
 math: true

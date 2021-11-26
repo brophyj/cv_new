@@ -31,7 +31,25 @@ content:
   #  tag: Deep Learning
   #- name: Other
    # tag: Demo
-
+   
+item:
+- certificate_url: ""
+  date_end: ""
+  date_start: "2019-09-01"
+  description: CIHR funded project looking at the comparative effectiviness of ticagrelor versus clopidogrel in acute coronary syndromes.
+  organization: Research project
+  organization_url: ""
+  title: C4 Ticagrelor compared to clopidogrel in acute coronary syndromes - the TC4 comparative effectiveness study
+  url: "https://brophyj.github.io/index.html"
+- certificate_url: ""
+  date_end: ""
+  date_start: "2021-03-01"
+  description: First 10 chapters of an online E book on clinical epidemiology using R, created with Bookdown (other chapters to follow).
+  organization: Teaching material
+  organization_url: ""
+  title: (Mostly) Clinical Epidemiology with R
+  url: "https://bookdown.org/jbrophy115/bookdown-clinepi/"
+  
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
   columns: '2'

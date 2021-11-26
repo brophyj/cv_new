@@ -24,7 +24,7 @@ date_format: Jan 2006
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 item:
 - certificate_url: https://statisticalhorizons.com/seminars/public-seminars/machine-learning
-  date_end: "2021-01-08"
+  date_end: ""
   date_start: "2021-01-06"
   description: Within R framework, topics included cross-validation and and advanced variable selection methods for regression analysis.
   organization: Statistical Horizons
@@ -32,7 +32,7 @@ item:
   title: Machine Learning
   url: ""
 - certificate_url: https://statisticalhorizons.com/seminars/public-seminars/matching-and-weighting-for-causal-inference-with-r
-  date_end: "2021-01-15"
+  date_end: ""
   date_start: "2021-01-13"
   description: Quasi-experimental techniques of matching and weighting methods using R to estimate causal effects from observational data.
   organization: Statistical Horizons
@@ -40,7 +40,7 @@ item:
   title: Matching and Weighting for Causal Inference with R
   url: ""
 - certificate_url: https://www.keele.ac.uk/primary-care-short-courses/statisticalmethodsforriskpredictionandprognosticmodels/
-  date_end: "2021-11-11"
+  date_end: ""
   date_start: "2021-11-09"
   description: Develop and validate risk prediction and prognostic models, specifically for binary or time-to-event clinical outcomes.
   organization: Keele University

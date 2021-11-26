@@ -23,41 +23,38 @@ date_format: Jan 2006
 #   Leave other parameters empty if not required.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 item:
-- certificate_url: https://www.coursera.org
-  date_end: ""
-  date_start: "2021-01-25"
-  description: ""
-  organization: Coursera
-  organization_url: https://www.coursera.org
-  title: Neural Networks and Deep Learning
+- certificate_url: https://statisticalhorizons.com/seminars/public-seminars/machine-learning
+  date_end: "2021-01-08"
+  date_start: "2021-01-06"
+  description: Within R framework, topics included cross-validation and and advanced variable selection methods for regression analysis.
+  organization: Statistical Horizons
+  organization_url: https://statisticalhorizons.com
+  title: Machine Learning
   url: ""
-- certificate_url: https://www.edx.org
-  date_end: ""
-  date_start: "2021-01-01"
-  description: Formulated informed blockchain models, hypotheses, and use cases.
-  organization: edX
-  organization_url: https://www.edx.org
-  title: Blockchain Fundamentals
-  url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-- certificate_url: https://www.datacamp.com
-  date_end: "2020-12-21"
-  date_start: "2020-07-01"
-  description: ""
-  organization: DataCamp
-  organization_url: https://www.datacamp.com
-  title: 'Object-Oriented Programming in R'
+- certificate_url: https://statisticalhorizons.com/seminars/public-seminars/matching-and-weighting-for-causal-inference-with-r
+  date_end: "2021-01-15"
+  date_start: "2021-01-13"
+  description: Quasi-experimental techniques of matching and weighting methods using R to estimate causal effects from observational data.
+  organization: Statistical Horizons
+  organization_url: https://statisticalhorizons.com
+  title: Matching and Weighting for Causal Inference with R
+  url: ""
+- certificate_url: https://www.keele.ac.uk/primary-care-short-courses/statisticalmethodsforriskpredictionandprognosticmodels/
+  date_end: "2021-11-11"
+  date_start: "2021-11-09"
+  description: Develop and validate risk prediction and prognostic models, specifically for binary or time-to-event clinical outcomes.
+  organization: Keele University
+  organization_url: https://www.keele.ac.uk/primary-care-short-courses/
+  title: Statistical methods for risk prediction and prognostic models
   url: ""
 
 design:
   columns: '2' 
 ---
 
-
-**Previous accomplishements (2019)**
+**Previous accomplishments (2019 - 2020)**
 * Bayesian Regression Modeling with rstanarm Course - **DataCamp** [certificate](files/rstan.pdf)    
 * [Causal Diagrams: Draw Your Assumptions Before Your Conclusions](https://courses.edx.org/courses/course-v1:HarvardX+PH559x+1T2019/course/) - **EdX** [certificate](files/HarvardX_Certificate.pdf)    
-
-**Previous accomplishements (2020)**   
 * Building Web Applications with Shiny in R - **DataCamp** Feb 2020 [certificate](files/shiny.pdf)    
 * [Mechanical Ventilation for COVID-19](https://courses.edx.org/courses/course-v1:HarvardX+COV19x+1T2020/course/) - **EdX** April 2020  [certificate](files/HarvardCertificate_2ventilation.pdf)      
 * Visualizing Geospatial Data in R - **DataCamp** April 2020 [certificate](files/Geospatial.pdf)     
@@ -68,5 +65,5 @@ design:
 * [Methods in Genetic and Epigenetic Epidemiology](https://sph.umich.edu/umsse/courses/index.html) - **University of Michigan - 55th Summer Session in Epidemiology** July 2020 [certificate](files/UM719.pdf)        
 
 
-**Accomplishements (2021)**   
+**Accomplishments (2021)**   
 

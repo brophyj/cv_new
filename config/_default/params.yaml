@@ -23,20 +23,19 @@ twitter: ''
 email: james.brophy@mcgill.ca
 phone: 514 934-1934
 address:
-  street: 450 Serra Mall
-  city: Stanford
-  region: CA
-  postcode: '94305'
-  country: United States
-  country_code: US
+  street: 5252 Boul. de Maisonneuve West Room 2B.37
+  city: Montreal
+  region: QC
+  postcode: 'H4A 3S5'
+  country: Canada
+  country_code: CA
 coordinates:
-  latitude: '37.4275'
-  longitude: '-122.1697'
-directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
+  latitude: '45.4733'
+  longitude: '-73.6046'
+directions: Enter Building and take the stairs to Floor 2 then buzz
 office_hours:
-  - 'Monday 10:00 to 13:00'
-  - 'Wednesday 09:00 to 10:00'
-appointment_url: 'https://calendly.com'
+  - 'Upon appointment'
+# appointment_url: 'https://calendly.com'
 contact_links:
   - icon: twitter
     icon_pack: fab
@@ -45,15 +44,8 @@ contact_links:
   - icon: skype
     icon_pack: fab
     name: Skype Me
-    link: 'skype:echo123?call'
-  - icon: keybase
-    icon_pack: fab
-    name: Chat on Keybase
-    link: 'https://keybase.io/'
-  - icon: comments
-    icon_pack: fas
-    name: Discuss on Forum
-    link: 'https://discourse.gohugo.io'
+    link: 'skype:jbrophy1712'
+
 
 # Site header
 
@@ -79,7 +71,7 @@ highlight_languages:
   - r
   - python
   - latex
-math: false
+math: true
 diagram: false
 privacy_pack: false
 edit_page:

@@ -1,5 +1,5 @@
 ---
-title: "Journal Article from 2020"
+title: "Bayesian Interpretation of the EXCEL and other RCTs"
 authors:
 - admin
 date: "2020-06-01T00:00:00Z"

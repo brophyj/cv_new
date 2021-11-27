@@ -1,6 +1,6 @@
 ---
 
-title: "Trade Offs Versus Obfuscation"
+title: "Trade-Offs Versus Obfuscation"
 subtitle: ""
 summary: ""
 authors: []
@@ -32,7 +32,7 @@ On Nov 15 2021, the Lancet published an individual patient data (IPD) meta-analy
 <br> *Among patients with left main coronary artery disease and, largely, low or intermediate coronary anatomical complexity, there was no statistically significant difference in 5-year all-cause death between PCI and CABG, although a Bayesian approach suggested a difference probably exists (more likely than not \<0·2% per year) favouring CABG. There were trade-offs in terms of the risk of myocardial infarction, stroke, and revascularisation. A heart team approach to communicate expected outcome differences might be useful to assist patients in reaching a treatment decision.* <br> <br> The paper is remarkable for several reasons:    
 1. In addition to standard frequentist analyses, it included a Bayesian assessment of total mortality.     
 2. The main text of the paper did not consider the composite primary endpoint, generally a composite of several cardiovascular outcomes including death, myocardial infarction, stroke or revascularizations, of these trials but reported only the individual endpoints.    
-3. The conclusion speaks of **trade-offs** in the risk of myocardial infarction, stroke, and revascularisation implying their are supporting data for both interventions which does not accurately reflect the reality.   
+3. The conclusion speaks of **trade-offs** in the risk of myocardial infarction, stroke, and revascularisation implying there are supporting data for both interventions which does not accurately reflect the reality.   
 4. While most would agree with the concept of heart team approach, this is only valid if fully transparent evidence is provided and by relegating the primary endpoint to supplemental material and excluding this from the more informative Bayesian analyses, the authors risk undermining their recommendation.
 
 ## Bayesian approach
@@ -48,10 +48,10 @@ It is surprising that the authors elected to focus their IPD not on the primary 
 
 ## Trade-offs
 
-The authors state "“There were **trade-offs** in terms of the risk of myocardial infarction, stroke, and revascularisation." In addition, to the 86% probability of increased mortality at 5 years, the authors report statistically significant increases of 135% (HR 2·35 (1·71–3·23)) in spontaneous myocardial infarction and 78% (HR 1·78 (1·51–2·10) in the need for repeat revascularizations with PCI. Provided the patient has a reasonable life expectancy, all outcomes favor CABG except for stroke and that difference is not statistically significant (HR 0·84 (0·59–1·21)). In absolute term, for every 1000 patients treated with PCI versus CABG, one would expect 35 more patients to have a spontaneous MI & 76 more to undergo repeat revascularization over 5 years, with no discernible difference in stroke. Therefore the question arises what **'trade-offs'** are the authors referring to? Allowing the authors to highlight the increased stroke risk at 1 year with CABG seems more like a failure of the peer review system as this outcome was never prespecified in any of the original studies and seems purely data driven.    
+The authors state "“There were **trade-offs** in terms of the risk of myocardial infarction, stroke, and revascularisation." In addition, to the 86% probability of increased mortality at 5 years, the authors report statistically significant increases of 135% (HR 2·35 (1·71–3·23)) in spontaneous myocardial infarction and 78% (HR 1·78 (1·51–2·10) in the need for repeat revascularizations with PCI. Provided the patient has a reasonable life expectancy, all outcomes favor CABG except for stroke and that difference is not statistically significant (HR 0·84 (0·59–1·21)). In absolute terms, for every 1000 patients treated with PCI versus CABG, one would expect 35 more patients to have a spontaneous MI & 76 more to undergo repeat revascularization over 5 years, with no discernible difference in stroke. Therefore the question arises what **'trade-offs'** are the authors referring to? Allowing the authors to highlight the increased stroke risk at 1 year with CABG seems more like a failure of the peer review system as this outcome was never prespecified in any of the original studies and seems purely data driven.    
 
 ## Heart team approach   
 
-The authors recommend a heart team approach to communicating this information and I suspect that the medical community is largely in agreement, provided the totality of the evidence is presented in a transaprent and unbiased manner, ideally incorporating the additional advantages of Bayesian analyses. Despite  four of the 15 authors coming from surgical backgrounds, one may question if this article is an objective and nonpartisan accounting of the evidence. This reader is left with the impression of a cabal of conflicted cardiologists attempting to obfuscate the evidence, aided and abetted by an ineffective peer review system.
+The authors recommend a heart team approach to communicating this information and I suspect that the medical community is largely in agreement, provided the totality of the evidence is presented in a transparent and unbiased manner, ideally incorporating the additional advantages of Bayesian analyses. Despite  four of the 15 authors coming from surgical backgrounds, one may question if this article is an objective and nonpartisan accounting of the evidence. This reader is left with the impression of a cabal of conflicted cardiologists attempting to obfuscate the evidence, aided and abetted by an ineffective peer review system.
 
 

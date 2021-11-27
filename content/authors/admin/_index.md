@@ -44,6 +44,9 @@ education:
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
+- icon: university
+  icon_pack: fas
+  link: https://www.mcgill.ca/epi-biostat-occh/james-brophy
 - icon: envelope
   icon_pack: fas
   link: 'mailto:james.brophy@mcgill.ca'  # For a direct email link, use "mailto:james.brophy@mcgill.ca".

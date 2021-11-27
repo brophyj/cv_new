@@ -39,7 +39,7 @@ item:
   description: CIHR funded project looking at the comparative effectiviness of ticagrelor versus clopidogrel in acute coronary syndromes.
   organization: Research project
   organization_url: ""
-  title: C4 Ticagrelor compared to clopidogrel in acute coronary syndromes - the TC4 comparative effectiveness study
+  title: TC4 Ticagrelor compared to clopidogrel in acute coronary syndromes - the TC4 comparative effectiveness study
   url: "https://brophyj.github.io/index.html"
 - certificate_url: ""
   date_end: ""

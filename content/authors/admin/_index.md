@@ -78,6 +78,7 @@ user_groups:
 - Visitors
 ---
 
-Jay Brophy is a tenured (full) professor with a joint appointment in the Departments of Medicine and Epidemiology and Biostatistics where he works as a clinical cardiologist and does research in cardiovascular epidemiology. His research interests are eclectic and include outcomes research, pharmacoepidemiology, health technology assessment, economic analyses and clinical research which are supported partially through a FRQS chair in health technology assessment and evidence-based medicine. 
+Jay Brophy is a tenured (full) professor with a joint appointment in the Departments of Medicine and Epidemiology and Biostatistics where he works as a clinical cardiologist and does research in cardiovascular epidemiology. His research interests are eclectic and include outcomes research, pharmacoepidemiology, health technology assessment, economic analyses and clinical research which are supported partially through a FRQS chair in health technology assessment and evidence-based medicine.     
+He is a fellow of the [Canadian Academy of Health Sciences](https://cahs-acss.ca/fellows/) and the [Canadian Cardiovascular Society](https://ccs.ca/fellow-of-the-ccs-faqs/).
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "files/cv_short_1.pdf" "newtab" >}}CV{{< /staticref >}}.

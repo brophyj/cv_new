@@ -43,3 +43,15 @@ The Bayesian analysis is helpful as it moves discussion away from null hypothesi
 
 It is surprising that the authors elected to focus their IPD not on the primary endpoint of the trials which was generally a composite of total mortality, myocardial infarction, stroke and, depending on the study, ischemia driven revascularization either as a primary or secondary outcome but rather on the individual components of the composite outcome. It is only deep in the supplemental material that the results of the composite outcome can be found **without any additional Bayesian analysis**. It would be appreciated if the authors could confirm the earlier results of a 90% probability that the composite endpoint, including repeat revascularizations, is increased by at least 5 extra events per 100 patients treated with PCI.\
 ![](composite.png)     
+
+
+
+## Trade-offs
+
+The authors state "“There were **trade-offs** in terms of the risk of myocardial infarction, stroke, and revascularisation." In addition, to the 86% probability of increased mortality at 5 years, the authors report statistically significant increases of 135% (HR 2·35 (1·71–3·23)) in spontaneous myocardial infarction and 78% (HR 1·78 (1·51–2·10) in the need for repeat revascularizations with PCI. Provided the patient has a reasonable life expectancy, all outcomes favor CABG except for stroke and that difference is not statistically significant (HR 0·84 (0·59–1·21)). In absolute term, for every 1000 patients treated with PCI versus CABG, one would expect 35 more patients to have a spontaneous MI & 76 more to undergo repeat revascularization over 5 years, with no discernible difference in stroke. Therefore the question arises **what trade-offs** are the authors referring to? Allowing the authors to highlight the increased stroke risk at 1 year with CABG seems more like a failure of the peer review system as this outcome was never prespecified in any of the origianl studies and seems purely data driven.    
+
+## Heart team approach   
+
+The authors recommend a heart team approach to communicating this information and I suspect that the medical community is largely in agreement, provided the totality of the evidence is presented in a transaprent and unbiased manner, ideally incorporating the additional advantages of Bayesian analyses. Despite  four of the 15 authors coming from surgical backgrounds, one may question if this article is an objective and nonpartisan accounting of the evidence. This reader is left with the impression of a conflicted cabal of cardiologists attempting to obfuscate the evidence, aided and abetted by an ineffective peer review system.
+
+

@@ -38,7 +38,7 @@ So while the guideline writers have accurately quoted the reference, the actual 
 
 The inability of these results to lead to definitive conclusions is illustrated by the following plot of this probability density function.
 
-```{r graph, message=FALSE, warning=FALSE, echo=FALSE}
+```{r graph, message=FALSE, warning=FALSE, echo=FALSE, eval=FALSE}
 library(tidyverse)
 ggplot(data.frame(x = c(0.5, 1.75)), aes(x = x)) +
   stat_function(fun = dnorm, args = list(1.04, .1658), colour = "deeppink") +
@@ -54,8 +54,12 @@ ggplot(data.frame(x = c(0.5, 1.75)), aes(x = x)) +
   stat_function(fun = dnorm, args = list(1.04, .1658), xlim = c(1.15,1.7), geom = "area", alpha = 0.2) +
   stat_function(fun = dnorm, args = list(1.04, .1658), xlim = c(1,1.15), geom = "area", alpha = 0.2, fill = "yellow") 
 
+ggsave("graph.png", dpi = 300, width = 8, height = 4)  
+
 
 ```
+
+![](graph.png)          
 
 This demonstrates that the probability of increased mortality with PCI is 60% and 25% probability that the mortality OR is increased by at least 15% compared to CABG.
 

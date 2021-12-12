@@ -1,6 +1,4 @@
 ---
-# Documentation: https://wowchemy.com/docs/managing-content/
-
 title: "Inaccurate References Guile Duplicity and Perfidious Publications"
 subtitle: ""
 summary: ""
@@ -30,7 +28,7 @@ projects: []
 
 Good scientific writing is characterized by clarity of thought and often buttressed by appropriate peer reviewed references. This is of extreme importance when the scientific writing is that of consensus guidelines. But are references always faithfully quoted and even if that is true, was the original reference in fact accurate and truthful.
 
-Consider the recent AHA / ACC Guidelines for Coronary Artery Revascularization. According to these guidelines, class 1 recommendation arises when benefits \>\>\> risks and class 2a when benefits \>\> risks. In the section dealing with left main disease, we find the following recommendation
+Consider the recent AHA / ACC Guidelines for Coronary Artery Revascularization. According to these guidelines, class 1 recommendation arises when benefits \>\>\> risks and class 2a when benefits \>\> risks. In the section dealing with left main disease, we find the following recommendation.   
 
 ![](featured.png)
 

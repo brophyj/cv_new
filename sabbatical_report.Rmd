@@ -1,0 +1,81 @@
+---
+title: "Sabbatical report"
+author: ""
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
+output:
+  pdf_document:
+    toc: no
+  html_document:
+    code_folding: hide
+    highlight: tango
+    theme: cerulean
+  word_document:
+    toc: yes
+link-citations: yes
+linkcolor: red
+urlcolor: blue
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(message=FALSE, error=FALSE, warning=FALSE, comment=NA, echo = knitr::is_html_output())   
+options(mc.cores = parallel::detectCores())   
+
+# for pdf page breaks - insert`r pagebreak()`
+pagebreak <- function() {
+  if(knitr::is_latex_output())
+    return("\\newpage")
+  else
+    return('<div style="page-break-before: always;" />')
+}
+
+```
+
+<center>
+
+James Brophy MD PhD\
+Professor of Medicine & Epidemiology, Biostatistics and Occupational Health (joint)\
+McGill University Health Center,\
+1001 Decarie Blvd Room C04.1410\
+Montreal (Qc) H4A 3J1\
+e-mail: [james.brophy\@mcgill.ca](mailto:james.brophy@mcgill.ca){.email}
+
+</center>
+
+\vspace{10pt}
+
+My research interest has always been at the intersection of biostatistics, epidemiology and clinical medicine and I planned to use my sabbatical to continue this avenue of research and teaching. Obviously, the continued pandemic necessitated some pivoting in attaining those goals. In particular travelling and visits were replaced by online activities.
+
+\vspace{10pt}
+
+### 1. Advancing quantitative skills
+
+While the pandemic limited on site visits, I was able to advance my learning in the fields of machine learning and causal inference via online learning. Among the formal online courses that I completed were;\
+i) Introduction to Machine Learning, Cross Validation, & Variable Selection by Kevin J. Grimm )Arizona State University - Jan 2021\
+ii) Matching and Weighting for Causal Inference Using R by Stephen Vaisey (Duke University) - Feb 2021\
+iii) Bayesian Data Analysis course by Aki Vehtari Aalto University based on the book Bayesian Data Analysis Third edition (2021) - Mar 2021
+
+\vspace{10pt}
+
+### 2. Applications to research publications (2021)
+
+I am either the sole or senior author of the following publication which employ Bayesian methods and which were performed during this sabbatical period.\
+i) [Analysis plan Does Sarilumab Reduce Mortality in Hospitalized Patients for COVID-19? A Bayesian Reanalysis](https://scholar.google.ca/citations?view_op=view_citation&hl=en&user=IXoZb4wAAAAJ&sortby=pubdate&citation_for_view=IXoZb4wAAAAJ:SxCCDk4iOpsC)\
+ii) [Tocilizumab in COVID-19--A Bayesian reanalysis of RECOVERY](https://www.medrxiv.org/content/10.1101/2021.06.15.21258966v1)\
+iii) [Remdesivir and systemic corticosteroids for the treatment of COVID-19: A Bayesian re-analysis](https://www.sciencedirect.com/science/article/pii/S1201971221000771)\
+iv) [Bayesian analyses of cardiovascular trials--bringing added value to the table](https://www.sciencedirect.com/science/article/abs/pii/S0828282X2100163X) v) [Key issues in the statistical interpretation of randomized clinical trials](https://www.sciencedirect.com/science/article/abs/pii/S0828282X20311806)
+
+\vspace{10pt}
+
+### 3. Applications to teaching (2021)
+
+I completed the first 10 chapters of an online book using RMarkdown (language that incorporates html and R statistical language) that emphasizes hands on computer coding to learn clinical and epidemiologic research principles. The book can be accessed [here.](https://bookdown.org/jbrophy115/bookdown-clinepi/)
+
+\vspace{10pt}
+
+### 4. Other activities during this 6 month sabbatical
+
+i)  Chair of Population Health Research Institute (McMaster University) Internal Grant Competition
+ii) Consultant for L'Institut national d'excellence en santé et en services sociaux (INESSS)
+iii) Associate editor Canadian Journal Cardiology -- handled 33 articles during this period
+iv) Peer reviewed additional 39 articles for 11 different journals during this period

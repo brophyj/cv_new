@@ -1,5 +1,5 @@
 ---
-title: "Inaccurate References Guile Duplicity and Perfidious Publications"
+title: "Inaccurate References; Guile, Duplicity, and Perfidious Publications"
 subtitle: ""
 summary: ""
 authors: []
@@ -26,7 +26,7 @@ image:
 projects: []
 ---
 
-Good scientific writing is characterized by clarity of thought and often buttressed by appropriate peer reviewed references. This is of extreme importance when the scientific writing is that of consensus guidelines. But are references always faithfully quoted and even if that is true, was the original reference in fact accurate and truthful.
+Good scientific writing is characterized by clarity of thought and often buttressed by appropriate peer reviewed references. This is of extreme importance when the scientific writing is that of consensus guidelines. But are references always faithfully quoted and even if that is true, are the original references in fact accurate and truthful?
 
 Consider the recent [AHA / ACC Guidelines for Coronary Artery Revascularization. According to these guidelines](https://www.jacc.org/doi/10.1016/j.jacc.2021.09.006), class 1 recommendation arises when benefits \>\>\> risks and class 2a when benefits \>\> risks. In the section dealing with left main disease, we find the above recommendation.
 
@@ -63,7 +63,7 @@ ggsave("graph.png", dpi = 300, width = 8, height = 4)
 
 This demonstrates that the probability of increased mortality with PCI is 60% and 25% probability that the mortality OR is increased by at least 15% compared to CABG.
 
-Moreover, there are other notable limitations to this publication which one may have expected an illustrious group of guideline writers to have noticed. First according equal weighting given to RCTs and observational studies may be questioned. Second an important quality element in a network meta-analysis is to assure consistency between the observed direct effects and the calculated indirect effects. However according to their figure below, there were in fact **NO** studies observational or randomized comparing PCI to medical therapy rather this OR was calculated only by considering the indirect evidence coming from studies comparing CABG to medical therapy and CABG to PCI.
+Moreover, there are other notable limitations to this publication which one may have expected an illustrious group of guideline writers to have noticed. First according equal weighting given to RCTs and observational studies may be questioned. Second an important quality element in a network meta-analysis is to assure consistency between the observed direct effects and the calculated indirect effects. However according to their figure below, there were in fact **NO** studies, observational or randomized, comparing PCI to medical therapy rather this OR was calculated only by considering the indirect evidence coming from studies comparing CABG to medical therapy and CABG to PCI.
 
 ![](pic1.png)      
 

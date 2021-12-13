@@ -26,7 +26,7 @@ image:
 projects: []
 ---
 
-Good scientific writing is characterized by clarity of thought and often buttressed by appropriate peer reviewed references. This is of extreme importance when the scientific writing is that of consensus guidelines. But are references always faithfully quoted and even if that is true, are the original references in fact accurate and truthful?
+Good scientific writing is characterized by clarity of thought and often buttressed by appropriate peer reviewed references. This is of extreme importance when the scientific writing is that of consensus guidelines. But are references always faithfully quoted and even if that is true, are the original references in fact accurate and truthful?       
 
 Consider the recent [AHA / ACC Guidelines for Coronary Artery Revascularization. According to these guidelines](https://www.jacc.org/doi/10.1016/j.jacc.2021.09.006), class 1 recommendation arises when benefits \>\>\> risks and class 2a when benefits \>\> risks. In the section dealing with left main disease, we find the above recommendation.
 

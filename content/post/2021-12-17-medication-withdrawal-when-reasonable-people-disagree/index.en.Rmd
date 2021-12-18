@@ -5,8 +5,8 @@ summary: ""
 authors: []
 tags: []
 categories: []
-date: 2021-12-17T17:25:17-05:00
-lastmod: 2021-12-17T17:25:17-05:00
+date: 2021-12-17T14:39:55-05:00
+lastmod: 2021-12-17T14:39:55-05:00
 featured: false
 draft: false
 
@@ -25,13 +25,14 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
+
  
   Recently, the following case was [posted on Twitter](https://twitter.com/purviparwani/status/1470928298343485441)        
 
 *50 yo M LAD STEMI s/p PCI 12 yrs ago. 280 lbs then. Now WFPB diet- 170 lbs. LDL of 45 on Lipitor 10. Asymptomatic, 12K steps daily. Finds me with a hope to get off BB, ACEI & aldactone. EF 30% before now 50% What would you do?*      
   
   
-  The opinion was offered by several cardiologists, whom I consider thoughtful and whom I respect, that he should continue the same treatment regime. My gut feeling was much more open to the patient’s desire to withdraw some of the prescribed drugs. When reasonable people disagree it typically reflects a lack of perfect evidence and highlights the need for careful deductive reasoning. Herein are my thoughts and reasoning on this question.      
+  The opinion was offered by several cardiologists, whom I consider thoughtful and whom I respect, that he should continue the same treatment regime. My gut feeling was much more open to the patient’s desire to withdraw some of the prescribed drugs. When reasonable people disagree it typically reflects a lack of perfect evidence and highlights the need for careful deductive reasoning. Herein are my thoughts and reasoning on this question.          
 
 As an older member of the cardiology fraternity, I have a longer memory of some of the seminal trials that have shaped our treatment orthodoxies. **Understanding where we are today requires a clear understanding of the past**. Therefore let’s begin with more or less at the beginning and look at the evidence for beta-blockers. The first trial of beta-blockers post MI was in 1974 with atenolol and the effect on total mortality was not statistically significant.      
 
@@ -54,7 +55,7 @@ Obviously, we do not know these counterfactual results, but a reasonable bet is 
 
 Now I have only looked at the question of beta blocker withdrawal as chronologically that was probably the first medication given to the patient and likely the one with the greatest negative impact on QoL. I do recognize the heresy of a cardiologist suggesting beta blocker withdrawal. Of course, beta blockers do have a role in chronic left ventricular dysfunction but here the studies addressed a population with depressed ejection fractions and so don’t provide any compelling reason for their continuation in this patient.      
 
-The same detailed examination of the continued use of other medications would seem appropriate and may end up in a future blog.
+The same detailed examination of the continued use of other medications seems appropriate and may be the source of a future blog.
 
 
 

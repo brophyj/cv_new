@@ -1,0 +1,66 @@
+---
+title: "Pacemaker risk following transcatheter aortic valve replacement - A Bayesian reanalysis"
+authors:
+- admin
+date: "2022-05-03T00:00:00Z"
+doi: "10.1016/j.ijcard.2022.03.008"
+
+# Schedule page publish date (NOT publication's date).
+publishDate: "2022-03-01T00:00:00Z"
+
+# Publication type.
+# Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
+# 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
+# 7 = Thesis; 8 = Patent
+publication_types: ["2"]
+
+# Publication name and optional abbreviated publication name.
+publication: "*International Journal of Cardiology 355 (2022) 32–36*"
+publication_short: ""
+
+abstract: Background; A recent publication of a nationwide Swedish, population-based cohort study found no statistically significant difference for all-cause mortality. It is unknown if a Bayesian reanalysis would provide additional insights and lead to the same conclusion. Methods; A digitalized approach to the published Kaplan – Meier curves was used to reconstruct the individual patient dataset. Bayesian survival analyses of this data using both vague, thereby allowing the posterior probability to be completely dominated by the observed data, as well as skeptical and informative priors, based on the mortality risk of pacemaker implantation following surgical aortic valve replacement, were performed. Results; The individual patient data set was reliably reconstructed and showed a 4 year follow-up hazard ratio (HR) = 1.08, 95 % credible interval (CrI) 0.85–1.36. The Bayesian analysis using a vague prior revealed a 74.9 % probability of increased mortality in the pacemaker group. Using a skeptical, semi-informative, and fully informative priors, the posterior probabilities of increased mortality following pacemaker insertion was increased to 68.9 %, 93.9 % and 98.4 %, respectively. Conclusions; This Bayesian reanalysis suggests a moderate to high probability of an increased total mortality in TAVR patients requiring post procedural pacemaker implantation.
+
+
+# Summary. An optional shortened abstract.
+summary: Bayesain reanalysis of previously published cohort study which suggests with moderate to high probability that the need for a permanent pacemaker following TAVR is associated with increased mortality in the first 4 years following the procedure.
+
+tags:
+- Source Themes
+featured: false
+
+# links:
+# - name: ""
+#   url: ""
+url_pdf: https://www.internationaljournalofcardiology.com/article/S0167-5273(22)00328-X/fulltext
+url_code: ''
+url_dataset: ''
+url_poster: ''
+url_project: ''
+url_slides: ''
+url_source: ''
+url_video: ''
+
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder. 
+image:
+  caption: ''
+  focal_point: ""
+  preview_only: false
+
+# Associated Projects (optional).
+#   Associate this publication with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `internal-project` references `content/project/internal-project/index.md`.
+#   Otherwise, set `projects: []`.
+projects: []
+
+# Slides (optional).
+#   Associate this publication with Markdown slides.
+#   Simply enter your slide deck's filename without extension.
+#   E.g. `slides: "example"` references `content/slides/example/index.md`.
+#   Otherwise, set `slides: ""`.
+slides: ""
+---
+
+
+Supplementary notes can be added here, including [code and math](https://github.com/brophyj/tavr_pace)

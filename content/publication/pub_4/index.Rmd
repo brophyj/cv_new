@@ -30,8 +30,8 @@ featured: false
 
 # links:
 # - name: ""
-#   url: ""
-url_pdf: https://www.internationaljournalofcardiology.com/article/S0167-5273(22)00328-X/fulltext
+url: https://www.brophyj.com/publication/pub_4/tavr_pace.pdf
+url_pdf: https://www.brophyj.com/publication/pub_4/tavr_pace.pdf
 url_code: ''
 url_dataset: ''
 url_poster: ''

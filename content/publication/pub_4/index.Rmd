@@ -30,8 +30,8 @@ featured: false
 
 # links:
 # - name: ""
-url: https://www.brophyj.com/publication/pub_4/tavr_pace.pdf
-url_pdf: https://www.brophyj.com/publication/pub_4/tavr_pace.pdf
+# url: ""
+url_pdf: tavr_pace.pdf
 url_code: ''
 url_dataset: ''
 url_poster: ''

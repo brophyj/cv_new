@@ -18,16 +18,16 @@ abstract: "The three objectives of this talk were to \n
 3) appreciate how the quality of the guideline process may be improved   \n
 
 My take home messages from this presentation were;     \n   
-1) guidelines often involve uncritical evaluations of the literature which can provides a veneer of study integrity, objectivity, scientific validity and independence to sometimes questionable evidence  \n 
-2) guideliens can also be subject to subjectivity, cognitive biases, and conflicts of interest \n
+1) guidelines often involve uncritical evaluations of the literature which can provide a veneer of study integrity, objectivity, scientific validity and independence to sometimes questionable evidence  \n 
+2) guidelines can also be subject to subjectivity, cognitive biases, and conflicts of interest \n
 3) poor guidelines can lead to i) acceptance of marginal or ineffective therapies as “standard of care” ii) overtreatment iii) diversion of funds from other worthwhile priorities iv) inhibition local critical evidence assessment, clinical judgement and patient preferences in routine decision making v) provide false certainty removing the impetus for replication studies to resolve residual uncertaintyies\n
-4) guideline process could be improved by enhancing i) multidisciplinary committee composition (methodologists, economists, multi-stakeholder) ii) enhance transparency iii) improve critical appraisal process iv) improved managment of conflicts of interest"     
+4) guideline process could be improved by enhancing i) multidisciplinary committee composition (methodologists, economists, multi-stakeholder) ii)  transparency iii) the critical appraisal process iv) the management of conflicts of interest"     
 
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: "2022-04-11T12:00:00Z"
-date_end: "2022-04-11T13:00:00Z"
+date: "2022-04-11T9:00:00Z"
+date_end: "2022-04-11T10:30:00Z"
 all_day: false
 
 # Schedule page publish date (NOT talk date).

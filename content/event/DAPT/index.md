@@ -18,7 +18,7 @@ abstract: "The three objectives of this talk were to \n
 3) Appreciate the role and limitations of professional society guideline processes   \n
 
 My take home messages from this presentation were;     \n   
-1) For acute coronary synromes, inconclusive evidence for any net clinical superiority between different DAPT regimes, but big cost difference exist  \n 
+1) For acute coronary syndromes, there is inconclusive evidence for any net clinical superiority between different DAPT regimes, but big cost differences do exist  \n 
 2) For stable CAD, no evidence for net clinical benefit with DAPT over ASA alone\n
 3) DAPT duration, awaiting more evidence that shorter duration provides equivalent benefit, but may be considered for those at very high bleeding risk \n
 4) Current CCS guideline recommendations needs revisiting"     
@@ -26,8 +26,8 @@ My take home messages from this presentation were;     \n
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: "2022-02-03T12:00:00Z"
-date_end: "2022-02-03T13:00:00Z"
+date: "2022-02-03T8:00:00Z"
+date_end: "2022-02-03T9:00:00Z"
 all_day: false
 
 # Schedule page publish date (NOT talk date).

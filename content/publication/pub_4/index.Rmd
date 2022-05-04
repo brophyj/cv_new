@@ -31,7 +31,7 @@ featured: false
 # links:
 # - name: ""
 # url: ""
-url_pdf: tavr_pace.pdf
+url_pdf: https://www.internationaljournalofcardiology.com/article/S0167-5273(22)00328-X/fulltext
 url_code: ''
 url_dataset: ''
 url_poster: ''

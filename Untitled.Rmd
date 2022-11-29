@@ -1,0 +1,26 @@
+---
+name: James (Jay) Brophy
+position: ""
+address: "440 Strathcona Ave Westmount QC H3Y 2X1"
+phone: 514 934-1934
+www: www.brophyj.com
+email: "james.brophy@mcgill.ca"
+profilepic: brophy.jpg
+twitter: brophyj
+github: brophyj
+linkedin: brophyj
+# orcid: ff837659-6cab-4980-bc45-51d836e4fd6b
+date: "`r format(Sys.time(), '%B %Y')`"
+aboutme: ""
+output: 
+  vitae::awesomecv:
+    latex_engine: xelatex
+linkcolor: red
+urlcolor: blue
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+To who it may concern

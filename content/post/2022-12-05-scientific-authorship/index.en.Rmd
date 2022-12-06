@@ -17,9 +17,6 @@ image:
 projects: []
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
 
 I recently reviewed a paper with 18 authors which reached a final conclusion of no morality difference between 2 contrasts (RR 1.0, 95% CI 0.5-2.0). Now this is an obviously faulty interpretation that mixes "absence of evidence with evidence of absence"[see here](https://www.bmj.com/content/311/7003/485).\
 <br> This got me thinking about scientific authorship and raised several existential questions.\

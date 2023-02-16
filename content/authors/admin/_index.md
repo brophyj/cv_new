@@ -69,7 +69,7 @@ social:
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 - icon: cv
   icon_pack: ai
-  link: https://github.com/brophyj/cv_new/tree/main/static/files/CV_quarto.html
+  link: files/cv_short_1.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""

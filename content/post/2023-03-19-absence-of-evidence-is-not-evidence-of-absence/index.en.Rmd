@@ -112,4 +112,4 @@ research is necessary to clarify the residual uncertainties. The final dilemma c
 even Bayesian analyses of randomized trials provide only probability estimates for average treatment effects
 and not for the more elusive individual treatment effect.
 
-Of course, an added benefit of the Bayesian analysis is the ability to incorporate previous knowledge. The statistical code for this analysis can be found on [here](https://github.com/brophyj/eCPR) and a more detailed non-peer reviewed manuscript may be found [here](https://www.medrxiv.org/content/10.1101/2023.02.13.23285890v2).
+Of course, an added benefit of the Bayesian analysis is its ability to incorporate previous knowledge. The statistical code for this analysis can be found on [here](https://github.com/brophyj/eCPR) and a more detailed non-peer reviewed manuscript may be found [here](https://www.medrxiv.org/content/10.1101/2023.02.13.23285890v2).

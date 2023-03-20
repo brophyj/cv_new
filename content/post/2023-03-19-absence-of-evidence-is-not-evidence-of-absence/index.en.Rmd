@@ -96,8 +96,8 @@ equivalent.
 The graphical presentation of these results is shown below
 ![](featured1.png)
 
-```{r}
-knitr::include_graphics("featured1.png")
+```{r echo=FALSE, message=FALSE, out.width="200%"}
+knitr::include_graphics("/Users/jay/Documents/CV/cv_new/content/post/2023-03-19-absence-of-evidence-is-not-evidence-of-absence/featured1.png")
 ```
 
 

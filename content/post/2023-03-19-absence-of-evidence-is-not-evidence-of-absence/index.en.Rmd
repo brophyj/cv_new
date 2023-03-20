@@ -1,13 +1,11 @@
 ---
-title: Absence of evidence is not evidence of absence
-author: Jay Brophy
+title: "Absence of evidence is not evidence of absence"
+author: "Jay Brophy"
 date: '2023-03-19'
-slug: []
 categories: []
 tags: []
-subtitle: ''
-summary: ''
-authors: []
+subtitle: ""
+summary: ""
 lastmod: '2023-03-19T15:43:45-04:00'
 featured: no
 draft: false

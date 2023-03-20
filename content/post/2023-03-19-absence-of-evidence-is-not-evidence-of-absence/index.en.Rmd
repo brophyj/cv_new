@@ -25,9 +25,9 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
-A previous post referred to the difficulty some researchers / reviewers have in distinguishing between **absence of evidence and evidence of absence**, even though this issue has been well discussed for almost 30 years (see [here](https://www.bmj.com/content/311/7003/485) and [here](http://www.stat.columbia.edu/~gelman/research/published/signif4.pdf)). Despite the fact that these publications have several thousand citations, this remains an important problem, even in high quality medical journals.     
+A previous post referred to the difficulty some researchers / reviewers have in distinguishing between **absence of evidence and evidence of absence**, even though this issue has been well discussed for almost 30 years (see [here](https://www.bmj.com/content/311/7003/485) and [here](http://www.stat.columbia.edu/~gelman/research/published/signif4.pdf)). Despite the fact that these publications have several thousand citations, this remains an important problem, even in high impact medical journals.     
 
-For example, I recently read a [NEJM](https://www.nejm.org/doi/full/10.1056/NEJMoa2204511) randomized clinical trial (RCT) investigating whether the addition of extracorporeal cardiopulmonary resuscitation (eCPR) to standard CPR (cCPR) can improve survival and diminish anoxic brain injury. Out-of-hospital cardiac arrest is a frequent event and its devastating
+For example, I recently read a [NEJM](https://www.nejm.org/doi/full/10.1056/NEJMoa2204511) randomized clinical trial (RCT) investigating whether the addition of extracorporeal cardiopulmonary resuscitation (eCPR) to standard conventional CPR (cCPR) can improve survival and diminish anoxic brain injury. Out-of-hospital cardiac arrest is a frequent event and its devastating
 consequences are only partially mitigated by rapid commencement of basic life
 support with high-quality cCPR. There
 remains a substantial subset of individuals who do not respond rapidly
@@ -35,7 +35,7 @@ to these measures and whether eCPR
 can improve outcomes is an important clinical question.
 In this trial, the primary outcome, 30 day survival without significant neurological
 deficit, was an odds ratio of 1.4 (95% confidence interval, 0.5 to 3.5; P =
-0.52) in favor eCPR. This lead to the
+0.52) in favor eCPR. This lead to the abstract
 conclusion "In patients with refractory out-of-hospital cardiac arrest,
 extracorporeal CPR and conventional CPR had similar effects on survival
 with a favorable neurological outcome".    
@@ -43,29 +43,27 @@ with a favorable neurological outcome".
 This trial  addressed an important
 clinical question in the most challenging of research environments and the authors 
 are to be congratulated on their trial design, its execution, and a
-nuanced discussion. However the constraints of standard statistical
+nuanced discussion in the body of the article. However the constraints of standard statistical
 analyses limits the quantitative appreciation of their data, and
-prevents a full and comprehensive exploitation and updating of past
+prevents a full and comprehensive data exploitation and updating of past
 knowledge. Trials that fail to meet
 statistical significance and are often incorrectly thought of as
-"negative" trials, and null hypothesis significance testing (NHST) favors this confusion
+"negative" trials, and the null hypothesis significance testing (NHST) paradigm favors this confusion
 between "*absence of evidence and evidence of absence*".     
 
-The goal of this communication is to demonstrate that a Bayesian
-perspective permits additional insights into the specific clinical
-question regarding the added value of eCPR following an out-of-hospital
-arrest in patients refractory to cCPR and by concentrating on posterior probabilities intrinsically avoids these misinterpretations.    
+The goal of this post is to demonstrate that a Bayesian
+perspective, by concentrating on posterior probabilities, permits additional insights into the specific clinical
+question and intrinsically avoids these misinterpretations.    
 
-This post does not reiterate the many reasons to be wary of
+The post does not reiterate the many other reasons to be wary of
 null hypothesis significance testing (NHST), p values and confidence
 intervals (see [here](https://www.tandfonline.com/doi/full/10.1080/00031305.2019.1583913)). Rather it assumes the reader has perhaps heard that
 Bayesian methods mirror our intuitive learning and diagnostic processes
 and is curious about its potential application to RCT analyses and
 interpretations. Bayesian approaches provide benefits over standard
 statistical analyses by avoiding dichotomizing results into statistical significance or not, with an
-obligatory loss of information and understanding. In addition, Bayesian analyses concentrate on direct estimation of the parameters of interest accompanied by direct probability statements regarding their uncertainty (herein the
-risk of survival with intact neurological status), as well as permitting the
-incorporation prior knowledge.    
+obligatory loss of information and understanding. This is accomplished by concentrating on direct estimation of the parameters of interest and providing direct probability statements regarding their uncertainty (herein the
+risk of survival with intact neurological status). The price to be paid for these benefits is the need to specify a prior distribution before seeing the current data.   
 
 These probability statements arise from the posterior distribution
 according to the Bayes Thereom, expressed as follows:

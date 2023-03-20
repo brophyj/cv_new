@@ -58,12 +58,12 @@ arrest in patients refractory to cCPR and by concentrating on posterior probabil
 
 This post does not reiterate the many reasons to be wary of
 null hypothesis significance testing (NHST), p values and confidence
-intervals[see here](https://www.tandfonline.com/doi/full/10.1080/00031305.2019.1583913). Rather it assumes the reader has perhaps heard that
+intervals (see [here](https://www.tandfonline.com/doi/full/10.1080/00031305.2019.1583913)). Rather it assumes the reader has perhaps heard that
 Bayesian methods mirror our intuitive learning and diagnostic processes
 and is curious about its potential application to RCT analyses and
 interpretations. Bayesian approaches provide benefits over standard
 statistical analyses by avoiding dichotomizing results into statistical significance or not, with an
-obligatory loss of information and understanding. In addition, Bayesian analyses concentrate on direct estimation of the parameters of interest accompanied by direct probability statements regarding their uncertainty(herein the
+obligatory loss of information and understanding. In addition, Bayesian analyses concentrate on direct estimation of the parameters of interest accompanied by direct probability statements regarding their uncertainty (herein the
 risk of survival with intact neurological status), as well as permitting the
 incorporation prior knowledge.    
 
@@ -75,7 +75,7 @@ Therefore, in addition to the current data summarized by the probability
 of the data (likelihood function), prior probability distributions are
 required. Because our main focus is the analysis and interpretation of
 the current RCT alone, an initial analysis may use a
-default vague parameter prior ($log(\theta) \sim Normal [0, 2.50]$,
+default vague parameter prior $$log(\theta) \sim Normal [0, 2.50]$$,
 thereby assuring that the posterior distribution is dominated by the
 observed data.     
 

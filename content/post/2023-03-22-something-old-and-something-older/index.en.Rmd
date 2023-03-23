@@ -32,5 +32,21 @@ This week one of the other co-instructors chose (for reasons that will become ev
 
 [Letters to the editor](https://pubmed.ncbi.nlm.nih.gov/18160695/) immediately following the article's publication noted that the mortality benefit exceeded all reasonable estimates as influenza mortality during the winter months accounts for 5% or less of total mortality. In these letters, the perceived biased result was attributed to residual and unmeasured confounding. As of March 23 2023 despite these initial concerns, the publication has been cited 233 times, including 13 times in 2022. In only 5 of these 233 citations was the term "bias" also found and in those the discussion was again limited to confounding. Two potential confounding sources mentioned were i) increased vaccinations in the worried well ii) decreased vaccination in those deemed to have too many competing comorbidities for vaccination to make a difference. The majority of articles citing this 2007 publications therefore seem to have taken the results at face value and, as an example, even in 2023 have uncritically written ["prevent influenza-related hospitalizations and deaths among older adults"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9843923/).     
 
-While there is undoubtedly some degree of residual confounding, it seems unlikley that it could explain this magnitude of bias, from a theoretical ceiling of an approximate 5% mortality decrease to the reported 50% decrease.
+While there is undoubtedly some degree of residual confounding, it seems unlikely that it could explain this magnitude of bias, from a theoretical ceiling of an approximate 5% mortality decrease to the reported 50% decrease. The clue to resolving this bias is found by a careful reading of their methods   
+    
+  *All noninstitutionalized members of the plans were included in that season’s cohort if they were 65 years of age or older as of October 1, had been continuously enrolled in the plan for the preceding 12 months, were alive on the first day of the influenza season, and were either continuously enrolled or died during the outcome period.*     
+
+Since it is virtually impossible that the vaccinated individuals all received their vaccination on Oct 1 of each flu season, there is an obvious misclassification of exposure time. This neglect of the period of exposure to risk was well described by Bradford Hill (of the causality checklist fame) in a [1937 Lancet publication](https://github.com/brophyj/cv_new/blob/main/static/files/BradfordHillFallaciesXII.pdf) where he even provides a numerical example involving inoculation! 
+
+Now the authors didn't give us the raw data, not even the total number of deaths in either exposure group so some assumptionsmust be made
+They did give the total number vaccinated (415,249), unvaccinated (298,623) and total number of deaths (8796)
+They also didn't say when each vaccinated person got their shot but it is safe to assume that they didn't all get it on Oct 1
+I assumed that on Oct 1 nobody was vaccinated and that subsequently on Nov 1, Dec 1 and Jan 1, 1/3 got vaccinated at each date with 1% waiting until Feb 1
+I then assumed that the death rate per month was 0.002058 and that this WAS THE SAME FOR BOTH GROUPS
+ Now if one analyses the data as per the NEJM, the crude OR = 0.45 when the truth or adjusted rate =1
+In other words, the entire effect is explained by immortal time and the correct way to analyse this data with peron-time was known at least since Hill's 1937 publication
+The right analysis with person time gives the correct OR = 1 
+Amazing that 70 years after Hill's publication, authors were still getting it wrong.
+It's not just these authors and the reviewers but in the multiple letters to the NEJM in 2007 that queried this unbelievable mortality result, noboby brought up this error, rather everyone tried to blame residual confounding.
+In my experience every time you have a huge bias, here it is likely about 10 fold (assuming a possible mortality beneift of about 5% since 5% of total winter deaths are flu related not the reported 50%), then the issue is not confo ding but immortal time (either the sleection or misclassifcation variation)
 

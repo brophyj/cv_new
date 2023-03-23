@@ -38,7 +38,7 @@ Since it is virtually impossible that the vaccinated individuals all received th
 ![](table17.png)
 Inspired by Hill's example, I re-examined the 2007 data. Now the authors didn't give us the raw data, not even the total number of deaths in either exposure group nor the timing of vaccinations so some assumptions must be made. They did provide the total number of vaccinated (415,249), unvaccinated (298,623) and total number of deaths (8796). It seems safe to assume that the vaccinated didn't all get it on Oct 1. I assumed that on Oct 1 nobody was vaccinated and that subsequently on Nov 1, Dec 1 and Jan 1, 1/3 got vaccinated at each date with 1% waiting until Feb 1. Following Hill's example, I **assumed there was no difference in death rates between the 2 groups** and that the death rate per month was 0.002058. Again following Hill's work I produced the following table.    
 ![](my_table.png)
- Now if one analyses the data in the above Table, as per the NEJM (see `Total` line ), the crude RR = 0.45, this is slightly different than the reported RR but to be expected as i had to guess what the actually monthly mortality rates were.    
+ Now if one analyses the data in the above Table, as per the NEJM (see `Total` line), the crude RR = 0.45, this is slightly different than the reported RR but to be expected as i had to guess what the actually monthly mortality rates were.    
  
  **However the essential point is that the unadjusted RR in my Table is derived when the data simulation has assumed a constant monthly mortality rate that is NOT different between the exposed and unexposed groups.**   
  

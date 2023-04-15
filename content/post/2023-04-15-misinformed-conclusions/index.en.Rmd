@@ -44,7 +44,7 @@ In the first paper[@RN6772], the authors conclude
 
 While acknowledging that TAVR was associated with higher unadjusted (HR, 1.90; 95% CI, 1.59-2.26; P \< .001) and adjusted risk of all-cause mortality compared with SAVR (adjusted HR, 1.41; 95% CI, 1.03-1.93; P = .02) with long term follow-up (which may indeed be at least partially explained by residual confounding), the authors interpret the results as being comparable for the two techniques at one year. They report one year propensity score adjusted mortality as 5.7% and 6.9% mortality in the TAVR and SAVR patient, respectively (p=0.3).
 
-Drawing conclusions based on p values is known to be dangerous and a proposed, albeit perhaps minor, improvement is to use confidence intervals[@RN5420]. The following shows the risk difference with the 95% for the two mortality outcomes.
+Drawing conclusions based on p values is known to be dangerous and a proposed, albeit perhaps minor, improvement is to use confidence intervals[@RN5420]. The following shows the risk difference with the 95% CI for the two mortality outcomes.
 
 ```{r}
 prop.test(c(round(c(.057*9880,.069*1147))),c(9980,1147))
@@ -55,7 +55,11 @@ The implies that even ignoring any biases, concluding that the two approaches ha
 
 ## Example 2   
 
-A NEJM article[@RN6776] reported P that \"the prophylactic use of tranexamic acid during cesarean delivery did not lead to a significantly lower risk of a composite outcome of maternal death or blood transfusion than placebo\" (RR 0.89; 95% CI 0.74 to 1.07; P=0.19 for the primary outcome). These results could also be expressed as risk differences and attributable risks.
+A NEJM article[@RN6776] reported P that   
+
+> "the prophylactic use of tranexamic acid during cesarean delivery did not lead to a significantly lower risk of a composite outcome of maternal death or blood transfusion than placebo" (RR 0.89; 95% CI 0.74 to 1.07; P=0.19 for the primary outcome).      
+
+These results could also be expressed as risk differences and attributable risks.
 
 ```{r}
 mat1 <- matrix(c(233,201,5238,5328), nrow = 2, 

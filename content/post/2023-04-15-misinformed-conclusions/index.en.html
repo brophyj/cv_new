@@ -1,0 +1,120 @@
+---
+title: Misinformed conclusions
+subtitle: ""
+summary: ""
+authors: []
+tags: []
+categories: []
+date: 2023-04-14T14:39:55-05:00
+lastmod: 2023-04-14T14:39:55-05:00
+featured: false
+draft: false
+
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder.
+# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
+image:
+  caption: ""
+  focal_point: ""
+  preview_only: false
+
+# Projects (optional).
+#   Associate this post with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
+#   Otherwise, set `projects = []`.
+projects: []
+code-fold: true
+bibliography: bibliography.bib
+---
+
+
+
+<div id="likely-unintentional-but-misinformation-nevertheless" class="section level2">
+<h2>Likely unintentional (but misinformation nevertheless)</h2>
+<p>In three papers that I came across this week, I believe that each suffers from misinterpretations in their conclusions[<span class="citation">Mentias et al. (<a href="#ref-RN6772" role="doc-biblioref">2023</a>)</span>]<span class="citation">(<a href="#ref-RN6776" role="doc-biblioref">Pacheco et al. 2023</a>)</span><span class="citation">(<a href="#ref-RN6773" role="doc-biblioref">Murphy et al. 2022</a>)</span>.</p>
+</div>
+<div id="example-1" class="section level2">
+<h2>Example 1</h2>
+<p><img src="featured1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p>In the first paper<span class="citation">(<a href="#ref-RN6772" role="doc-biblioref">Mentias et al. 2023</a>)</span>, the authors conclude</p>
+<blockquote>
+<p>“In Medicare patients with pure native AR, TAVR with the current commercially available transcatheter valves has comparable short-term outcomes. Although long-term outcomes were inferior to SAVR, the possibility of residual confounding, biasing long-term outcomes, given older and frailer TAVR patients, cannot be excluded.”</p>
+</blockquote>
+<p>While acknowledging that TAVR was associated with higher unadjusted (HR, 1.90; 95% CI, 1.59-2.26; P &lt; .001) and adjusted risk of all-cause mortality compared with SAVR (adjusted HR, 1.41; 95% CI, 1.03-1.93; P = .02) with long term follow-up (which may indeed be at least partially explained by residual confounding), the authors interpret the results as being comparable for the two techniques at one year. They report one year propensity score adjusted mortality as 5.7% and 6.9% mortality in the TAVR and SAVR patient, respectively (p=0.3).</p>
+<p>Drawing conclusions based on p values is known to be dangerous and a proposed, albeit perhaps minor, improvement is to use confidence intervals<span class="citation">(<a href="#ref-RN5420" role="doc-biblioref">Wasserstein, Schirm, and Lazar 2019</a>)</span>. The following shows the risk difference with the 95% for the two mortality outcomes.</p>
+<pre class="r"><code>prop.test(c(round(c(.057*9880,.069*1147))),c(9980,1147))</code></pre>
+<pre><code>## 
+## 	2-sample test for equality of proportions with continuity correction
+## 
+## data:  c(round(c(0.057 * 9880, 0.069 * 1147))) out of c(9980, 1147)
+## X-squared = 2.7, df = 1, p-value = 0.1
+## alternative hypothesis: two.sided
+## 95 percent confidence interval:
+##  -0.028287  0.003362
+## sample estimates:
+##  prop 1  prop 2 
+## 0.05641 0.06888</code></pre>
+<p>The implies that even ignoring any biases, concluding that the two approaches have similar short term outcomes is only reasonable if one believes that a possible 2.8% absolute mortality reduction with SAVR from sampling variation alone is not clinically important. Others might consider that the conclusion is another example of conflating <strong>absence of evidence with evidence of absence</strong> and that additional data is required before drawing firm conclusions. This underscores the problem with dichotomized p values and risk ratios (as opposed to risk differences) as decision making tools.</p>
+</div>
+<div id="example-2" class="section level2">
+<h2>Example 2</h2>
+<p>A NEJM article<span class="citation">(<a href="#ref-RN6776" role="doc-biblioref">Pacheco et al. 2023</a>)</span> reported P that "the prophylactic use of tranexamic acid during cesarean delivery did not lead to a significantly lower risk of a composite outcome of maternal death or blood transfusion than placebo" (RR 0.89; 95% CI 0.74 to 1.07; P=0.19 for the primary outcome). These results could also be expressed as risk differences and attributable risks.</p>
+<pre class="r"><code>mat1 &lt;- matrix(c(233,201,5238,5328), nrow = 2, 
+              dimnames = list(c(&quot;placebo&quot;,&quot;tranexamic acid&quot;),c(&quot;Outcome +&quot;,&quot;Outcome -&quot;)))
+mat1</code></pre>
+<pre><code>##                 Outcome + Outcome -
+## placebo               233      5238
+## tranexamic acid       201      5328</code></pre>
+<pre class="r"><code>epiR::epi.2by2(mat1)</code></pre>
+<pre><code>##              Outcome +    Outcome -      Total                 Inc risk *
+## Exposed +          233         5238       5471        4.26 (3.74 to 4.83)
+## Exposed -          201         5328       5529        3.64 (4.26 to 4.26)
+## Total              434        10566      11000        3.95 (3.59 to 4.33)
+## 
+## Point estimates and 95% CIs:
+## -------------------------------------------------------------------
+## Inc risk ratio                                 1.17 (0.97, 1.41)
+## Odds ratio                                     1.18 (0.97, 1.43)
+## Attrib risk in the exposed *                   0.62 (-0.10, 1.35)
+## Attrib fraction in the exposed (%)            14.64 (-2.70, 29.05)
+## Attrib risk in the population *                0.31 (-0.30, 0.92)
+## Attrib fraction in the population (%)         7.86 (-1.76, 16.57)
+## -------------------------------------------------------------------
+## Uncorrected chi2 test that OR = 1: chi2(1) = 2.820 Pr&gt;chi2 = 0.093
+## Fisher exact test that OR = 1: Pr&gt;chi2 = 0.096
+##  Wald confidence limits
+##  CI: confidence interval
+##  * Outcomes per 100 population units</code></pre>
+<p>The risk difference is 6 fewer outcomes /1000 treated (95% CI-13.5, 1.0) and the attributable fraction is 14.6% (95% CI -2.70, 29.05) of outcomes being eliminated by treatment.  While these measures do not reach statistical significance, they may provide some additional insights into the trial's interpretation as the associated sampling variations suggest an effect size as large as 13 fewer outcomes / 1000 treated and an attributable fraction as large as 28% have not been eliminated. If one believes these potential measures are of clinical importance, then continuing research with this agent may be indicated.</p>
+</div>
+<div id="example-3" class="section level2">
+<h2>Example 3</h2>
+<p>The third paper is entitled ” Effect of a Run-In Period on Estimated Treatment Effects in Cardiovascular Randomized Clinical Trials: A Meta-Analytic Review”<span class="citation">(<a href="#ref-RN6773" role="doc-biblioref">Murphy et al. 2022</a>)</span> and the authors concluded “The use of a run-in period was not associated with a difference in the magnitude of treatment effect among cardiovascular prevention trials”.</p>
+<p>I found this result to be a priori very surprising. However without the raw data it is difficult to reproduce and assess what the authors have done. Nevertheless working with the aggregate data from the last column in Figure 1, I have performed a Bayesian analysis, with a vaguely informative prior such that the results are completely dominated by the published data.</p>
+<p>The posterior probability is displayed below.</p>
+<p><img src="{{< blogdown/postref >}}index.en_files/figure-html/brms-1.png" width="60%" /></p>
+<div id="ggplot-version" class="section level3">
+<h3>ggplot version</h3>
+<p><img src="{{< blogdown/postref >}}index.en_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>Based on this analysis, the probability that run-in trials has a larger treatment effect than non-run-in trials was 99 %. There was an 81 % probability that the effect size was at least 5% greater in the run-in trials. While this effect is not large, it is more in keeping with face validity that would suggest that run-in trials, by excluding non-compilers and those developing side effects, would be expected to yield a larger effect size than a comparable trial without a run-in.
+</p>
+</div>
+</div>
+<div id="references" class="section level2 unnumbered">
+<h2>References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-RN6772" class="csl-entry">
+Mentias, A., M. Saad, V. Menon, G. W. Reed, Z. Popovic, D. Johnston, L. Rodriguez, et al. 2023. <span>“Transcatheter Vs Surgical Aortic Valve Replacement in Pure Native Aortic Regurgitation.”</span> Journal Article. <em>Ann Thorac Surg</em> 115 (4): 870–76. <a href="https://doi.org/10.1016/j.athoracsur.2022.09.016">https://doi.org/10.1016/j.athoracsur.2022.09.016</a>.
+</div>
+<div id="ref-RN6773" class="csl-entry">
+Murphy, R. P., M. J. O’Donnell, A. Nolan, E. McGrath, A. O’Conghaile, J. Ferguson, A. Alvarez-Iglesias, et al. 2022. <span>“Effect of a Run-in Period on Estimated Treatment Effects in Cardiovascular Randomized Clinical Trials: A Meta-Analytic Review.”</span> Journal Article. <em>J Am Heart Assoc</em> 11 (20): e023061. <a href="https://doi.org/10.1161/JAHA.121.023061">https://doi.org/10.1161/JAHA.121.023061</a>.
+</div>
+<div id="ref-RN6776" class="csl-entry">
+Pacheco, L. D., R. G. Clifton, G. R. Saade, S. J. Weiner, S. Parry, Jr. Thorp J. M., M. Longo, et al. 2023. <span>“Tranexamic Acid to Prevent Obstetrical Hemorrhage After Cesarean Delivery.”</span> Journal Article. <em>N Engl J Med</em> 388 (15): 1365–75. <a href="https://doi.org/10.1056/NEJMoa2207419">https://doi.org/10.1056/NEJMoa2207419</a>.
+</div>
+<div id="ref-RN5420" class="csl-entry">
+Wasserstein, RL., AL. Schirm, and NA. Lazar. 2019. <span>“Moving to a World Beyond <span>‘p &lt; 0.05’</span>.”</span> Journal Article. <em>The American Statistician</em> 73: 1–19.
+</div>
+</div>
+</div>

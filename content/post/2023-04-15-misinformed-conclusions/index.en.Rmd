@@ -29,7 +29,7 @@ bibliography: bibliography.bib
 ---
 ## Likely unintentional (but misinformation nevertheless)
 
-In three papers that I came across this week, I believe that each suffers from misinterpretations in their conclusions[@RN6772][@RN6776][@RN6773].   
+In three papers that I read this week, I believe that each suffers from misinterpretations in their conclusions[@RN6772][@RN6776][@RN6773].   
 
 ## Example 1
 

@@ -57,9 +57,10 @@ The implies that even ignoring any biases, concluding that the two approaches ha
 
 A NEJM article[@RN6776] reported P that   
 
-> "the prophylactic use of tranexamic acid during cesarean delivery did not lead to a significantly lower risk of a composite outcome of maternal death or blood transfusion than placebo" (RR 0.89; 95% CI 0.74 to 1.07; P=0.19 for the primary outcome).      
+> "the prophylactic use of tranexamic acid during cesarean delivery did not lead to a significantly lower risk of a composite outcome of maternal death or blood transfusion than placebo" (RR 0.89; 95% CI 0.74 to 1.07; P=0.19 for the primary outcome)."     
 
-These results could also be expressed as risk differences and attributable risks.
+These results could also be expressed as risk differences and attributable risks.   
+
 
 ```{r}
 mat1 <- matrix(c(233,201,5238,5328), nrow = 2, 

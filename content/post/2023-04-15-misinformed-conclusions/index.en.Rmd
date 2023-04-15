@@ -65,13 +65,13 @@ epiR::epi.2by2(mat1)
 
 ```
 
-The risk difference is 6 fewer outcomes /1000 treated (95% CI-13.5, 1.0) and the attributable fraction is 14.6% (95% CI -2.70, 29.05) of outcomes being eliminated by treatment.  While these measures do not reach statistical significance, they may provide some additional insights into the trial\'s interpretation as the associated sampling variations suggest an effect size as large as 13 fewer outcomes / 1000 treated and an attributable fraction as large as 28% have not been eliminated. If one believes these potential measures are of clinical importance, then continuing research with this agent may be indicated.
+The risk difference is 6 fewer outcomes /1000 treated (95% CI-13.5, 1.0) and the attributable fraction is 14.6% (95% CI -2.70, 29.05) of outcomes being eliminated by treatment.  While these measures do not reach statistical significance, they may provide some additional insights into the trial\'s interpretation as the associated sampling variations suggest an effect size as large as 13 fewer outcomes / 1000 treated and an attributable fraction as large as 29% have not been eliminated. If one believes these potential measures are of clinical importance, then continuing research with this agent may be indicated.
 
 ## Example 3 
 
 The third paper is entitled " Effect of a Run-In Period on Estimated Treatment Effects in Cardiovascular Randomized Clinical Trials: A Meta-Analytic Review"[@RN6773] and the authors concluded "The use of a run-in period was not associated with a difference in the magnitude of treatment effect among cardiovascular prevention trials".
 
-I found this result to be a priori very surprising. However without the raw data it is difficult to reproduce and assess what the authors have done. Nevertheless working with the aggregate data from the last column in Figure 1, I have performed a Bayesian analysis, with a vaguely informative prior such that the results are completely dominated by the published data.
+I found this result to be a priori very surprising. However without the raw data it is difficult to completely reproduce and assess what the authors have done. Nevertheless working with the aggregate data from the last column in Figure 1, I have performed a Bayesian analysis, with a vaguely informative prior such that the results are completely dominated by the published data.
 
 The posterior probability is displayed below.
 
@@ -133,7 +133,7 @@ ggplot(aes(x = RR), data = post.samples) +
 res <- pnorm(c(.9,.95,1),mean(post.samples$RR),sd(post.samples$RR))
 ```
 
-Based on this analysis, the probability that run-in trials has a larger treatment effect than non-run-in trials was `r round(res[3]*100,0)` %. There was an `r round(res[2]*100,0)` % probability that the effect size was at least 5% greater in the run-in trials. While this effect is not large, it is more in keeping with face validity that would suggest that run-in trials, by excluding non-compilers and those developing side effects, would be expected to yield a larger effect size than a comparable trial without a run-in. 
+Based on this analysis, the probability that run-in trials has a larger treatment effect than non-run-in trials was `r round(res[3]*100,0)` %. There was an `r round(res[2]*100,0)` % probability that the effect size was at least 5% greater in the run-in trials. While this effect is not large, it is more in keeping with face validity that would suggest that run-in trials, by excluding non-compilers and those developing side effects, would be expected to yield a larger effect size than a comparable trial without a run-in period. 
 \newpage
 
 ## References

@@ -86,9 +86,9 @@ While I'm only a tiny speck in the universe, the possibility of this tool creati
 
 **Me:** caveat lector
 
-**ChatGPT**: "Caveat lector" or "reader beware" is another important principle to keep in mind when seeking information, whether from language models or other sources.
-It reminds us that as readers, we have a responsibility to critically evaluate the information presented to us, to consider the potential biases and limitations of the source, and to seek out multiple sources of information to verify and validate what we've learned.
-By being vigilant and discerning readers, we can better navigate the complex and ever-changing landscape of information and knowledge.
+> **ChatGPT**: "Caveat lector" or "reader beware" is another important principle to keep in mind when seeking information, whether from language models or other sources.
+> It reminds us that as readers, we have a responsibility to critically evaluate the information presented to us, to consider the potential biases and limitations of the source, and to seek out multiple sources of information to verify and validate what we've learned.
+> By being vigilant and discerning readers, we can better navigate the complex and ever-changing landscape of information and knowledge.
 
 **Me:** Good luck
 

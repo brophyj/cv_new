@@ -27,12 +27,12 @@ projects: []
 code-fold: true
 bibliography: bibliography.bib
 ---
+
 ## Likely unintentional (but misinformation nevertheless)
 
-In three papers that I read this week, I believe that each suffers from misinterpretations in their conclusions[@RN6772][@RN6776][@RN6773].   
+In three papers that I read this week, I believe that each suffers from misinterpretations in their conclusions[@RN6772][@RN6776][@RN6773].
 
 ## Example 1
-
 
 ```{r echo=FALSE, out.width = "75%", fig.align = "center"}
 knitr::include_graphics("featured1.png")
@@ -50,17 +50,15 @@ Drawing conclusions based on p values is known to be dangerous and a proposed, a
 prop.test(c(round(c(.057*9880,.069*1147))),c(9980,1147))
 ```
 
-The implies that even ignoring any biases, concluding that the two approaches have similar short term outcomes is only reasonable if one believes that a possible 2.8% absolute mortality reduction with SAVR from sampling variation alone is not clinically important. Others might consider that the conclusion is another example of conflating **absence of evidence with evidence of absence** and that additional data is required before drawing firm conclusions. This underscores the problem with dichotomized p values and risk ratios (as opposed to risk differences) as decision making tools.       
+The implies that even ignoring any biases, concluding that the two approaches have similar short term outcomes is only reasonable if one believes that a possible 2.8% absolute mortality reduction with SAVR from sampling variation alone is not clinically important. Others might consider that the conclusion is another example of conflating **absence of evidence with evidence of absence** and that additional data is required before drawing firm conclusions. This underscores the problem with dichotomized p values and risk ratios (as opposed to risk differences) as decision making tools.
 
+## Example 2
 
-## Example 2   
+A NEJM article[@RN6776] reported P that
 
-A NEJM article[@RN6776] reported P that   
+> "the prophylactic use of tranexamic acid during cesarean delivery did not lead to a significantly lower risk of a composite outcome of maternal death or blood transfusion than placebo" (RR 0.89; 95% CI 0.74 to 1.07; P=0.19 for the primary outcome)."
 
-> "the prophylactic use of tranexamic acid during cesarean delivery did not lead to a significantly lower risk of a composite outcome of maternal death or blood transfusion than placebo" (RR 0.89; 95% CI 0.74 to 1.07; P=0.19 for the primary outcome)."     
-
-These results could also be expressed as risk differences and attributable risks.   
-
+These results could also be expressed as risk differences and attributable risks.
 
 ```{r}
 mat1 <- matrix(c(233,201,5238,5328), nrow = 2, 
@@ -70,16 +68,15 @@ epiR::epi.2by2(mat1)
 
 ```
 
-The risk difference is 6 fewer outcomes /1000 treated (95% CI-13.5, 1.0) and the attributable fraction is 14.6% (95% CI -2.70, 29.05) of outcomes being eliminated by treatment.  While these measures do not reach statistical significance, they may provide some additional insights into the trial\'s interpretation as the associated sampling variations suggest an effect size as large as 13 fewer outcomes / 1000 treated and an attributable fraction as large as 29% have not been eliminated. If one believes these potential measures are of clinical importance, then continuing research with this agent may be indicated.
+The risk difference is 6 fewer outcomes /1000 treated (95% CI-13.5, 1.0) and the attributable fraction is 14.6% (95% CI -2.70, 29.05) of outcomes being eliminated by treatment.  While these measures do not reach statistical significance, they may provide some additional insights into the trial's interpretation as the associated sampling variations suggest an effect size as large as 13 fewer outcomes / 1000 treated and an attributable fraction as large as 29% have not been eliminated. If one believes these potential measures are of clinical importance, then continuing research with this agent may be indicated.
 
-## Example 3 
+## Example 3
 
 The third paper is entitled " Effect of a Run-In Period on Estimated Treatment Effects in Cardiovascular Randomized Clinical Trials: A Meta-Analytic Review"[@RN6773] and the authors concluded "The use of a run-in period was not associated with a difference in the magnitude of treatment effect among cardiovascular prevention trials".
 
 I found this result to be a priori very surprising. However without the raw data it is difficult to completely reproduce and assess what the authors have done. Nevertheless working with the aggregate data from the last column in Figure 1, I have performed a Bayesian analysis, with a vaguely informative prior such that the results are completely dominated by the published data.
 
 The posterior probability is displayed below.
-
 
 ```{r brms, cache=TRUE, warning=FALSE, message=FALSE,echo=FALSE, out.width="60%"}
 suppressPackageStartupMessages({
@@ -122,7 +119,6 @@ CIs <- mean(post.samples$RR) +c(-1,1)*1.96*sd(post.samples$RR)
 
 ### ggplot version
 
-
 ```{r echo=FALSE }
 # ggplot for RR
 library(ggplot2)
@@ -138,9 +134,6 @@ ggplot(aes(x = RR), data = post.samples) +
 res <- pnorm(c(.9,.95,1),mean(post.samples$RR),sd(post.samples$RR))
 ```
 
-Based on this analysis, the probability that run-in trials has a larger treatment effect than non-run-in trials was `r round(res[3]*100,0)` %. There was an `r round(res[2]*100,0)` % probability that the effect size was at least 5% greater in the run-in trials. While this effect is not large, it is more in keeping with face validity that would suggest that run-in trials, by excluding non-compilers and those developing side effects, would be expected to yield a larger effect size than a comparable trial without a run-in period. 
-\newpage
+Based on this analysis, the probability that run-in trials has a larger treatment effect than non-run-in trials was `r round(res[3]*100,0)` %. There was an `r round(res[2]*100,0)` % probability that the effect size was at least 5% greater in the run-in trials. While this effect is not large, it is more in keeping with face validity that would suggest that run-in trials, by excluding non-compilers and those developing side effects, would be expected to yield a larger effect size than a comparable trial without a run-in period. \newpage
 
 ## References
-
-

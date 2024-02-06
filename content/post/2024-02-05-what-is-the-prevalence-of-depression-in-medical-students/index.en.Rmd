@@ -79,7 +79,7 @@ include_graphics("images/I2.png")
 IOW, the individual studies may be considered as drawn from a supra-population distribution of potential studies, as indicated by the green curve above and blue curve below\
 <br> <br>
 
-```{r out.width="50%", fig.align='center'}
+```{r out.width="100%", fig.align='center'}
 include_graphics("images/RE.png")
 ```
 
@@ -107,7 +107,7 @@ Summarizing,\
 Consider their Figure 7 (chosen since the 183 studies have been grouped into 23 groups making data extraction more manageable).
 <br> <br>
 
-```{r out.width="50%", fig.align='center'}
+```{r out.width="100%", fig.align='center'}
 include_graphics("images/Fig7.png")
 ```
 
@@ -127,6 +127,10 @@ forest(res, addpred=TRUE, header=TRUE, shade="zebra")
 
 # 95% CI/PI - pred <- predict(res,  digits=2)
 # summary - summary(res)
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="100%"}
+include_graphics("images/forest.png")
 ```
 
 The combined effect shows a results that is comparable with the reported depression prevalence of 27.2% (95% CI, 24.7% to 29.9%) with the difference due to the original analysis not grouping the 183 studies.\
@@ -262,7 +266,7 @@ plot(g_all, digits = 2, base_size = 10)
 dev.off()
 ```
 
-```{r out.width="200%"}
+```{r out.width="100%"}
 include_graphics("images/out_all.png")
 ```
 

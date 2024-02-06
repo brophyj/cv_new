@@ -266,7 +266,7 @@ plot(g_all, digits = 2, base_size = 10)
 dev.off()
 ```
 
-```{r out.width="80%", fig.align='center'}
+```{r out.width="90%", fig.align='center'}
 include_graphics("images/out_all.png")
 ```
 
@@ -341,7 +341,7 @@ IOW, this study is not very informative and its implied precision is a misrepres
 <br>
 Figure on the left is often presented but figure on the right better reflects reality
 
-```{r echo=FALSE,out.width="40%", out.height="20%",fig.cap="Caveat lector",fig.show='hold',fig.align='center'}
+```{r echo=FALSE,out.width="40%", out.height="20%",fig.cap="Caveat lector",fig.show='hold'}
 knitr::include_graphics(c("images/Hierarchy_of_Evidence.png","images/pyramid_good.png"))
 ```
 

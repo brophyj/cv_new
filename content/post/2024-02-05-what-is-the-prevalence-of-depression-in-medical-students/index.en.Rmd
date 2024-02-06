@@ -339,9 +339,9 @@ IOW, this study is not very informative and its implied precision is a misrepres
 
 <span style="color: red;">**Caveat lector**</span>     
 <br>
-Figure on the left is often presented but figure on the right better reflects reality
+Figure on the top is often presented but figure on the bottom better reflects reality
 
-```{r echo=FALSE,out.width="100%", out.height="20%",fig.cap="Caveat lector",fig.show='hold', fig.align='center'}
+```{r echo=FALSE,out.width="90%", out.height="20%",fig.cap="Caveat lector",fig.show='hold', fig.align='center'}
 knitr::include_graphics(c("images/Hierarchy_of_Evidence.png","images/pyramid_good.png"))
 ```
 

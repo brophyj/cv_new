@@ -1,20 +1,24 @@
 ---
 title: What is the prevalence of depression in medical students
-author: Jay Brophy
-date: '2024-02-05'
-slug: []
-categories: []
-tags: []
-subtitle: ''
-summary: ''
+subtitle: ""
+summary: ""
 authors: []
-lastmod: '2024-02-05T17:33:54-05:00'
-featured: no
+tags: []
+categories: []
+date: 2024-01-31T14:39:55-05:00
+lastmod: 2023-01-31T14:39:55-05:00
+featured: true
+draft: false
+# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
-  caption: ''
-  focal_point: ''
-  preview_only: no
+  caption: ""
+  focal_point: ""
+  preview_only: false
 projects: []
+code-fold: true
+editor_options: 
+  markdown: 
+    wrap: sentence
 ---
 
 

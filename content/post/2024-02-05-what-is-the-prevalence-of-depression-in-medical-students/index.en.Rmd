@@ -163,7 +163,7 @@ grid.text("Prevalence of Depression or Depressive Symptoms Among Medical Student
 grid.text("Stratified by Screening Instrument (Figure 7)", .5, 1.1,  gp=gpar(cex=1.5))
 ```
 
-```{r, out.width="125%"}
+```{r, out.width="150%", fig.align='center'}
 include_graphics("images/metaplot.png")
 ```
 
@@ -266,7 +266,7 @@ plot(g_all, digits = 2, base_size = 10)
 dev.off()
 ```
 
-```{r out.width="100%"}
+```{r out.width="80%", fig.align='center'}
 include_graphics("images/out_all.png")
 ```
 
@@ -327,7 +327,7 @@ lci <- qnorm(0.025, mean(temp), sd(temp)) # 0.04411
 uci <- qnorm(0.975, mean(temp), sd(temp)) # 0.5952
 ```
 
-```{r out.width="50%", fig.align='center'}
+```{r out.width="60%", fig.align='center'}
 include_graphics("images/bayes_next.png")
 ```
 
@@ -341,7 +341,7 @@ IOW, this study is not very informative and its implied precision is a misrepres
 <br>
 Figure on the left is often presented but figure on the right better reflects reality
 
-```{r echo=FALSE,out.width="49%", out.height="20%",fig.cap="Caveat lector",fig.show='hold',fig.align='center'}
+```{r echo=FALSE,out.width="40%", out.height="20%",fig.cap="Caveat lector",fig.show='hold',fig.align='center'}
 knitr::include_graphics(c("images/Hierarchy_of_Evidence.png","images/pyramid_good.png"))
 ```
 

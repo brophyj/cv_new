@@ -107,7 +107,7 @@ Summarizing,\
 Consider their Figure 7 (chosen since the 183 studies have been grouped into 23 groups making data extraction more manageable).
 <br> <br>
 
-```{r out.width="100%", fig.align='center'}
+```{r out.width="90%", fig.align='center'}
 include_graphics("images/Fig7.png")
 ```
 
@@ -163,11 +163,11 @@ grid.text("Prevalence of Depression or Depressive Symptoms Among Medical Student
 grid.text("Stratified by Screening Instrument (Figure 7)", .5, 1.1,  gp=gpar(cex=1.5))
 ```
 
-```{r}
+```{r, out.width="125%"}
 include_graphics("images/metaplot.png")
 ```
 
-[Question:]{style="color: red;"} What is probability of the prevalence of depression in the next study (medical school)?\
+[Question:]{style="color: red;"} What is probability of the prevalence of depression in the next study (or in your medical school)?\
 [Answer:]{style="color: red;"} Although 95% CI are often interpreted as probability intervals, this is actually incorrect.
 To obtain probability statements one needs to switch to a Bayesian paradigm.
 This is beyond the scope of this presentation but fortunately, given the large amount of available data, little error is introduced by not doing the formal Bayesian analysis.

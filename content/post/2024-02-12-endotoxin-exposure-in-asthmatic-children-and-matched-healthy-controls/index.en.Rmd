@@ -5,8 +5,8 @@ summary: ""
 authors: []
 tags: []
 categories: []
-date: "Updated: `r Sys.Date()`"
-lastmod: last-modified
+date: 2024-01-31T14:39:55-05:00
+lastmod: 2024-01-31T14:39:55-05:00
 featured: true
 draft: false
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
@@ -15,9 +15,7 @@ image:
   focal_point: ""
   preview_only: false
 projects: []
-output:
-  html_document:
-    code_folding: hide
+code-fold: true
 editor_options: 
   markdown: 
     wrap: sentence

@@ -1,0 +1,273 @@
+---
+title: Endotoxin exposure in asthmatic children and matched healthy controls
+subtitle: ""
+summary: ""
+authors: []
+tags: []
+categories: []
+date: "Updated: `r Sys.Date()`"
+lastmod: last-modified
+featured: true
+draft: false
+# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
+image:
+  caption: ""
+  focal_point: ""
+  preview_only: false
+projects: []
+output:
+  html_document:
+    code_folding: hide
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
+
+```{r echo=FALSE,  message=FALSE, warning=FALSE, include=FALSE, results='hide'}
+knitr::opts_chunk$set(echo = FALSE)
+options(scipen = 1, digits = 2)
+pander::panderOptions('keep.trailing.zeros', TRUE)
+
+library(here)
+library(tidyverse)
+library(knitr)
+library(patchwork)
+library(gt)
+
+```
+
+
+
+### Background
+Here is a critical appraisal of this week's article. Recall that the goal is to not only improve critical appraisal skills but also to think about research questions, designs, and the necessary compromises that are often required in research. Hopefully this adds another dimension to typical journal clubs where either an article in uncritically endorsed enthusiastically or trashed unmercifully, although this is sometimes quite merited    
+<br>
+For reasons I am most unclear about, this week's selected article was the 2005 publication [Endotoxin exposure in asthmatic children and matched healthy controls: results of IPEADAM study](https://pubmed.ncbi.nlm.nih.gov/15926941/), Although not described as such, this was apparently a nested case-control study from a 1999 crosssectional study by the same [authors](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1313925/), of over 1500 completed questionnaires. Cases were children between the ages of 4 and 17 who had a study diagnosis of probable asthma. These <span style="color: red;">*asthmatic*</span> children were matched for sex, age and sib-ship size with children living in
+asthma free households and the following main conclusions reported.
+<br>
+<br>
+```{r out.width="110%"}
+include_graphics("images/conclusions.png")
+```
+
+A critical analysis should consider bias and statistical issues
+
+### Biases
+
+It is helpful to consider biases in observational studies according to the following grouping     
+- selection       
+- misinformation           
+- confounding      
+
+#### Selection bias
+
+[Selection bias](https://en.wikipedia.org/wiki/Selection_bias) is a distortion in the measure of association due to a sample selection such the measured association is not representative of what exists in the target population.
+
+After identification of the research question, the next step is to consider which population is to be studied and in this study one can distinguish between several      
+- target population (all children in the UK)     
+- study population (all those with a chance of being in the study, ie the 1500 children who completed the original questionnaire)     
+- sample population (the 200 children in Figure 1)     
+- analyzed sample population (the 90 matched pairs of children)      
+
+In their previous [work](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1313925/), the authors report an asthma prevalence of approximately 20%, or about 300 children.    
+- Does the study population reflect the target population?    
+- Do the 200 sample children reflect the total study population?    
+- Do the 90 matched pairs, the analytical sample population reflect the overall sample population? What about the missing cases?      
+<br>
+<span style="color: red;">Many reasons to be concerned about possible selection bias in this study.  </span>            
+Let's begin by examining their Figure 1 which is reproduced below.
+<br>
+<br>
+```{r echo=TRUE, fig.align='center'}
+library(tidyverse)
+# Define the data
+ages <- 4:17
+no_asthma_controls <- c(6, 5, 5, 3, 6, 4, 9, 7, 8, 11, 9, 10, 9, 1)
+asthma_cases <- c(12, 10, 5, 6, 6, 4, 13, 11, 7, 8, 10, 8, 3, 2)
+# sum(asthma_cases) #105
+# sum(no_asthma_controls) # 93
+
+data <- data.frame(ages, asthma_cases,no_asthma_controls)
+data_long <- gather(data,
+                  key = "status",
+                  value = "number",
+                  -ages)
+
+#  data_long |> filter (status=="asthma_cases") |> mutate(sum(number))
+
+# data_long |> filter (status=="no_asthma_controls") |> mutate((number))
+
+# Creating the bar plot
+ggplot(data_long, aes(x=factor(ages), y=number, fill=status)) +
+  geom_bar(stat="identity", position="dodge") +
+  theme_minimal() +
+  scale_y_continuous(limits = c(0, 14), breaks = c(0, 2, 4, 6, 8, 10,12,14)) +
+  labs(x="Age", y="Number of Cases", fill="Status",
+       title="Asthma Cases vs No Asthma Controls by Age") +
+  scale_fill_manual(values=c("asthma_cases"="blue", "no_asthma_controls"="red")) # Customize colors if needed
+
+```
+<br>
+<br>
+
+How many asthma cases (and controls) did they identify in this Figure?
+```{r echo=FALSE}
+# sum(asthma_cases) #105
+# sum(no_asthma_controls) # 93
+```
+
+The figure shows 105 cases and 93 controls, a total of 198 children. Yet the authors claim this figure shows the age distribution of 200 children. While the difference is small, it does raise further concerns about the reliability of their data analysis when there is a discordance in a simple counting of individuals.     
+       
+Why do they only use 90 cases? Presumably to meet their matching criteria, age (+/- 1 year). Below is the best matching I could create from their data.
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+# sum(asthma_cases) #105
+# sum(no_asthma_controls) # 93
+# Initialize a vector to track unmatched asthma cases
+unmatched_cases <- rep(0, length(ages))
+
+# Loop through each age group
+for (i in 1:length(ages)) {
+  # Match with exact age first
+  matches <- min(asthma_cases[i], no_asthma_controls[i])
+  asthma_cases[i] <- asthma_cases[i] - matches
+  no_asthma_controls[i] <- no_asthma_controls[i] - matches
+
+  # If there are still unmatched cases, try to match with -1 year age group
+  if (i > 1 && asthma_cases[i] > 0) {
+    matches <- min(asthma_cases[i], no_asthma_controls[i-1])
+    asthma_cases[i] <- asthma_cases[i] - matches
+    no_asthma_controls[i-1] <- no_asthma_controls[i-1] - matches
+  }
+
+  # Then, if there are still unmatched cases, try to match with +1 year age group
+  if (i < length(ages) && asthma_cases[i] > 0) {
+    matches <- min(asthma_cases[i], no_asthma_controls[i+1])
+    asthma_cases[i] <- asthma_cases[i] - matches
+    no_asthma_controls[i+1] <- no_asthma_controls[i+1] - matches
+  }
+
+  # Record the unmatched cases
+  unmatched_cases[i] <- asthma_cases[i]
+}
+
+# Calculate the total number of unmatched asthma cases
+total_unmatched_cases <- sum(unmatched_cases)
+# unmatched_cases
+# total_unmatched_cases
+
+###############
+#ages <- 4:17
+asthma_cases <- c(12, 10, 5, 6, 6, 4, 13, 11, 7, 8, 10, 8, 3, 2)
+m_asthma_cases <- asthma_cases - unmatched_cases
+
+m_no_asthma_controls <- m_asthma_cases
+# sum(m_asthma_cases) 91
+
+
+m_data <- data.frame(ages, m_asthma_cases,m_no_asthma_controls)
+m_data_long <- gather(m_data,
+                    key = "status",
+                    value = "number",
+                    -ages)
+
+# m_data_long |> filter (status=="m_asthma_cases") |> mutate(sum(number))
+
+# data_long |> filter (status=="no_asthma_controls") |> mutate((number))
+
+# Creating the bar plot
+ggplot(m_data_long, aes(x=factor(ages), y=number, fill=status)) +
+  geom_bar(stat="identity", position="dodge") +
+  theme_minimal() +
+  scale_y_continuous(limits = c(0, 14), breaks = c(0, 2, 4, 6, 8, 10,12,14)) +
+  labs(x="Age", y="Number of Cases", fill="Status",
+       title="Matched Asthma Cases vs No Asthma Controls by Age", 
+       subtitle="1:1 matching without replacements requires dropping 14 cases") +
+  scale_fill_manual(values=c("m_asthma_cases"="blue", "m_no_asthma_controls"="red")) # Customize colors if needed
+
+```
+
+The question then becomes why match?     
+Most people think matching is to control for confounding but this is only partly true (and indeed may be more than offset by potential selection bias) and the best reason is to improve precision in situations of sparse data.      
+Moreover, in this case a better alternative would have been not to match but to control for age in regression analysis as this would have allowed an estimation of the effect of age on the detection of asthma, using the whole study sample of 198 children, including the 105 cases.
+
+```{r echo=TRUE}
+data_long_uncount <- data_long %>% uncount(number) %>% 
+  mutate(stat=ifelse(status=="no_asthma_controls",0,1))
+out <- summary(glm(stat~ages, data = data_long_uncount, family = "binomial"))
+ci <- exp(out$coefficients[2,1] + c(-1,1) * out$coefficients[2,2])
+```
+
+This shows that each year of additional age is associated with a decrease in asthma diagnosis is `r paste0("OR = ", round(exp(out$coefficients[2,1]),2), ", ", "95%CI ", round(ci[1],2), " - ", round(ci[2],2))`    
+
+#### Misclassification
+
+The authors don't report the raw data for the endotoxin exposure but assuming the following distribution among cases and controls gives an OR that approximates their results
+
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+library(episensr)
+misclassification(matrix(c(40, 50, 27, 63),
+                          dimnames = list(c("Exposed+", "Exposed-"), c("Cases", "Controls")),
+                         nrow = 2, byrow = TRUE),
+                  type = "outcome",
+                  bias_parms = c(1,1,1,1))
+```
+Now what happens if misclassification is considered? Quantitative bias analysis (QBA) is occasionally more useful than simply applying heuristics. QBA has been operatioalized in the `episensr` package.       
+The authors report from their previous work that their asthma detection questionnaire has a 70% sensitivity and 91% specificity and applies both to those with and without the outcome.      
+<span style="color: red;">A definite worry for misclassification bias.  </span>      
+
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+library(episensr)
+misclassification(matrix(c(40, 50, 27, 63),
+                          dimnames = list(c("Exposed+", "Exposed-"), c("Cases", "Controls")),
+                         nrow = 2, byrow = TRUE),
+                  type = "outcome",
+                  bias_parms = c(.70,.70,.91,.91))
+```
+<br>
+<br>
+Conceptually, this misclassification of cases and controls suggest any association between indoor air pollutants and asthma will likely be underestimated and this analysis permits an estimate of the order of magnitude.
+
+#### Confounding
+
+How much residual or unmeasured confounding would be required to wipe out the observed effect? This can be determined using *EValues* as described in this [paper](https://pubmed.ncbi.nlm.nih.gov/28693043/).
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+library(EValue)
+evalues.OR(1.88, 1.11, 3.18, rare = FALSE)
+```
+This suggests that a moderate confounder with a risk of 2 fold to exposure and a 2 fold increase in the outcome would be required to eliminate the observed risk.          
+In conclusion, there are multiple potential biases (selection, misclassification and confounding) associated with this study. Unmeasured confounding is unlikely to explain the observed association and misclassification suggest the association may be underestimated, but the inability to evaluate the magnitude and direction of the selection bias limits any definitive bias assessment.     
+
+### Analyses
+
+The authors they performed a logistic regression where presumably probable asthma is the dependent variable. In this case understanding their table 2 is difficult.    
+
+```{r out.width="50%"}
+include_graphics("images/table2.png")
+```
+<br>
+From Table 2 the authors make causal statements not only about endotoxins and asthma but also about other variables, including for example, dampness and single parent home.     
+Making assertions based on regression coefficients from a multivariable analysis is subject to [Table 2 Fallacy](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3626058/). These covariate effect estimates may also be confounded even though the effect estimate for the main exposure is not confounded and their proper interpretation far from obvious.              
+<br>
+The authors state "There was no
+difference in the levels of exposure to house dust major
+allergen Der p 1, expressed in quartiles of exposure
+between asthmatic and non-asthmatic matched controls
+(Table 3)"
+
+
+```{r out.width="50%"}
+include_graphics("images/table3.png")
+```
+<br>
+Looking at the confidence intervals we see they are very wide and, for example, don't exclude that for quartile 2 there is a 180% increase or 64% decrease in asthma prevalence compared to quartile 1. The authors have conflated ["**an absence of evidence with evidence of absence**"](https://pubmed.ncbi.nlm.nih.gov/7647644/).      
+The authors make the same error in Table 4
+
+```{r out.width="50%"}
+include_graphics("images/table4.png")
+```
+<br>
+when they conclude there are no interactions. The more reasonable conclusion being even if one ignores the potential biases, they lack sufficient power to draw conclusions about interactions.     
+
+Plenty of interesting material for a critical analysis of this publication. Perhaps this is why it was selected as a critical appraisal suggests little to support  their conclusions

@@ -19,7 +19,6 @@ code-fold: true
 editor_options: 
   markdown: 
     wrap: sentence
-    code_folding: hide
 ---
 
 ```{r echo=FALSE,  message=FALSE, warning=FALSE, include=FALSE, results='hide'}

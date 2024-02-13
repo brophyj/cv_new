@@ -25,13 +25,13 @@ editor_options:
 
 <div id="background" class="section level3">
 <h3>Background</h3>
-<p>Here is a critical appraisal of this week’s article. Recall that the goal is to not only improve critical appraisal skills but also to think about research questions, designs, and the necessary compromises that are often required in research. Hopefully this adds another dimension to typical journal clubs where either an article in uncritically endorsed enthusiastically or trashed unmercifully, although this is sometimes quite merited<br />
+<p>Recall that the goal of the course is to not only improve critical appraisal skills but also to think about research questions, designs, and the necessary compromises that are often required in research. Hopefully this adds another dimension to typical journal clubs where either an article in uncritically endorsed enthusiastically or trashed unmercifully, although this is sometimes quite merited<br />
 <br>
-For reasons I am most unclear about, this week’s selected article was the 2005 publication <a href="https://pubmed.ncbi.nlm.nih.gov/15926941/">Endotoxin exposure in asthmatic children and matched healthy controls: results of IPEADAM study</a>, Although not described as such, this was apparently a nested case-control study from a 1999 crosssectional study by the same <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1313925/">authors</a>, of over 1500 completed questionnaires. Cases were children between the ages of 4 and 17 who had a study diagnosis of probable asthma. These <span style="color: red;"><em>asthmatic</em></span> children were matched for sex, age and sib-ship size with children living in
+For reasons I am somewhat unclear about, this week’s selected article was the 2005 publication <a href="https://pubmed.ncbi.nlm.nih.gov/15926941/">Endotoxin exposure in asthmatic children and matched healthy controls: results of IPEADAM study</a>, Although not described as such, this was apparently a nested case-control study from a 1999 crosssectional study by the same <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1313925/">authors</a>, of over 1500 completed questionnaires. Cases were children between the ages of 4 and 17 who had a study diagnosis of probable asthma. These <span style="color: red;"><em>asthmatic</em></span> children were matched for sex, age and sib-ship size with children living in
 asthma free households and the following main conclusions reported.
 <br>
 <br>
-<img src="images/conclusions.png" width="110%" /></p>
+<img src="images/conclusions.png" width="125%" /></p>
 <p>A critical analysis should consider bias and statistical issues</p>
 </div>
 <div id="biases" class="section level3">
@@ -43,15 +43,15 @@ asthma free households and the following main conclusions reported.
 <div id="selection-bias" class="section level4">
 <h4>Selection bias</h4>
 <p><a href="https://en.wikipedia.org/wiki/Selection_bias">Selection bias</a> is a distortion in the measure of association due to a sample selection such the measured association is not representative of what exists in the target population.</p>
-<p>After identification of the research question, the next step is to consider which population is to be studied and in this study one can distinguish between several<br />
+<p>After identification of the research question, the next step is to distinguish among the various populations, including the<br />
 - target population (all children in the UK)<br />
 - study population (all those with a chance of being in the study, ie the 1500 children who completed the original questionnaire)<br />
 - sample population (the 200 children in Figure 1)<br />
 - analyzed sample population (the 90 matched pairs of children)</p>
-<p>In their previous <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1313925/">work</a>, the authors report an asthma prevalence of approximately 20%, or about 300 children.<br />
-- Does the study population reflect the target population?<br />
-- Do the 200 sample children reflect the total study population?<br />
-- Do the 90 matched pairs, the analytical sample population reflect the overall sample population? What about the missing cases?<br />
+<p>In their previous <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1313925/">work</a>, the authors report an asthma prevalence of approximately 20%, or about 300 children based on their study population of 1500. The following questions need answering.<br />
+- Does the study population (?1500) reflect the target population?<br />
+- Do the 200 sample children reflect the total study population ?<br />
+- Do the 90 matched pairs, the <em>analytical sample</em> population reflect the overall sample population? What about the missing cases?<br />
 <br>
 <span style="color: red;">Many reasons to be concerned about possible selection bias in this study. </span><br />
 Let’s begin by examining their Figure 1 which is reproduced below.
@@ -120,8 +120,8 @@ misclassification(matrix(c(40, 50, 27, 63),
 <pre><code>##          point lower upper
 ## RR         1.4   1.1   1.8
 ## E-values   2.1   1.3    NA</code></pre>
-<p>This suggests that a moderate confounder with a risk of 2.1 fold to exposure and a 2.1 fold increase in the outcome would be required to eliminate the observed risk.<br />
-In conclusion, there are multiple potential biases (selection, misclassification and confounding) associated with this study. Unmeasured confounding is unlikely to explain the observed association and misclassification suggest the association may be underestimated, but the inability to evaluate the magnitude and direction of the selection bias limits definitive determination of the direction of the bias assessment.</p>
+<p>This suggests that a moderate confounder with a risk of 2.1 fold to exposure and a 2.1 fold increase in the outcome would be required to eliminate the observed risk. Of course if the true OR is greater due to misclassification bias the size of unmeasured confounder needed to eradicate the observed association would be even larger.<br />
+In conclusion, there are multiple potential biases (selection, misclassification and confounding) associated with this study. Unmeasured confounding is unlikely to explain the observed association and misclassification suggest the association may be underestimated, but the inability to evaluate the magnitude and direction of the selection bias limits definitive determination of the overall direction of the bias assessment.</p>
 </div>
 </div>
 <div id="analyses" class="section level3">
@@ -137,11 +137,11 @@ difference in the levels of exposure to house dust major
 allergen Der p 1, expressed in quartiles of exposure
 between asthmatic and non-asthmatic matched controls
 (Table 3)”</p>
-<p><img src="images/table3.png" width="50%" />
+<p><img src="images/table3.png" width="80%" />
 <br>
-Looking at the confidence intervals we see they are very wide and, for example, don’t exclude that for quartile 2 there is a 180% increase or 64% decrease in asthma prevalence compared to quartile 1. The authors have conflated <a href="https://pubmed.ncbi.nlm.nih.gov/7647644/">“<strong>an absence of evidence with evidence of absence</strong>”</a>.<br />
+Looking at the confidence intervals we see they are very wide and, for example, don’t exclude that for quartile 2 there is a 180% increase or 64% decrease in asthma prevalence compared to quartile 1. The authors have conflated <a href="https://pubmed.ncbi.nlm.nih.gov/7647644/">“<strong>an absence of evidence with evidence of absence</strong>”</a> and this <a href="https://www.brophyj.com/post/2023-03-19-absence-of-evidence-is-not-evidence-of-absence/">previous post</a>.<br />
 The authors make the same error in Table 4</p>
-<p><img src="images/table4.png" width="50%" /></p>
+<p><img src="images/table4.png" width="80%" /></p>
 <p><br>
 when they conclude there are no interactions. The more reasonable conclusion being even if one ignores the potential biases, they lack sufficient power to draw conclusions about interactions.</p>
 </div>

@@ -76,7 +76,7 @@ Let's begin by examining their Figure 1 which is reproduced below.
 <br>
 <br>
 
-```{r fig.align='center'}
+```{r fig.align='center', out.width="75%"}
 
 # week5.Rmd does the calculations - Define the data
 include_graphics("images/fig1.png")
@@ -89,12 +89,19 @@ How many asthma cases (and controls) did they identify in this Figure?
 
 The figure shows 105 cases and 93 controls, a total of 198 children. Yet the authors claim this figure shows the age distribution of 200 children. While the difference is small, it does raise further concerns about the reliability of their data analysis when there is a discordance in a simple counting of individuals.     
        
-Why do they only use 90 cases? Presumably to meet their matching criteria, age (+/- 1 year). Below is the best matching I could create from their data.
-```{r}
+Why do they only use 90 cases? Presumably to meet their matching criteria, age (+/- 1 year). Below is the best matching I could create from their data.    
+
+
+```{r fig.align='center', out.width="75%"}
+
+# week5.Rmd does the calculations - Define the data
 include_graphics("images/fig2.png")
 
 ```
+<br>
+<br>
 
 The question then becomes why match?     
 Most people think matching is to control for confounding but this is only partly true (and indeed may be more than offset by potential selection bias) and the best reason is to improve precision in situations of sparse data.      
 Moreover, in this case a better alternative would have been not to match but to control for age in regression analysis as this would have allowed an estimation of the effect of age on the detection of asthma, using the whole study sample of 198 children, including the 105 cases.
+

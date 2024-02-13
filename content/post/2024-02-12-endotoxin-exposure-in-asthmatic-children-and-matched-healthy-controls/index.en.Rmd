@@ -196,7 +196,7 @@ In conclusion, there are multiple potential biases (selection, misclassification
 
 The authors they performed a logistic regression where presumably probable asthma is the dependent variable. In this case understanding their table 2 is difficult.    
 
-```{r out.width="50%"}
+```{r out.width="90%"}
 include_graphics("images/table2.png")
 ```
 <br>
@@ -210,15 +210,15 @@ between asthmatic and non-asthmatic matched controls
 (Table 3)"
 
 
-```{r out.width="80%"}
+```{r out.width="90%"}
 include_graphics("images/table3.png")
 ```
 <br>
-Looking at the confidence intervals we see they are very wide and, for example, don't exclude that for quartile 2 there is a 180% increase or 64% decrease in asthma prevalence compared to quartile 1. The authors have conflated ["**an absence of evidence with evidence of absence**"](https://pubmed.ncbi.nlm.nih.gov/7647644/) and this [previous post](https://www.brophyj.com/post/2023-03-19-absence-of-evidence-is-not-evidence-of-absence/).      
+Looking at the confidence intervals we see they are very wide and, for example, don't exclude that for quartile 2 there is a 180% increase or 64% decrease in asthma prevalence compared to quartile 1. The authors have conflated ["**an absence of evidence with evidence of absence**"](https://pubmed.ncbi.nlm.nih.gov/7647644/). Aslo see this [previous post](https://www.brophyj.com/post/2023-03-19-absence-of-evidence-is-not-evidence-of-absence/).      
 The authors make the same error in Table 4
 
 
-```{r out.width="80%"}
+```{r out.width="90%"}
 include_graphics("images/table4.png")
 ```
 

@@ -60,7 +60,14 @@ It is helpful to consider biases in observational studies according to the follo
 
 [Selection bias](https://en.wikipedia.org/wiki/Selection_bias) is a distortion in the measure of association due to a sample selection such the measured association is not representative of what exists in the target population.     
 If the selection of cases and controls is not done independently of the exposure, then when you compare exposure distributions any observed differences are a combination of a true effect and an artifact of the way the data was collected.       
-This [figure](https://bookdown.org/jbrophy115/bookdown-clinepi/selection.html) may help explain
+This [figure](https://bookdown.org/jbrophy115/bookdown-clinepi/selection.html) may help explain. Where would you put the reinforcements?     
+
+```{r fig.align='center', out.width="75%"}
+# week5.Rmd does the calculations - 
+include_graphics("images/airplane.png")
+
+```
+<br>
 
 After identification of the research question, the next step is to distinguish among the various populations, including the      
 - target population (all children in the UK)     

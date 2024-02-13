@@ -63,9 +63,8 @@ If the selection of cases and controls is not done independently of the exposure
 This [figure](https://bookdown.org/jbrophy115/bookdown-clinepi/selection.html) may help explain. Where would you put the reinforcements?     
 
 ```{r fig.align='center', out.width="75%"}
-# week5.Rmd does the calculations - 
+# week5.Rmd does the calculations  
 include_graphics("images/airplane.png")
-
 ```
 <br>
 

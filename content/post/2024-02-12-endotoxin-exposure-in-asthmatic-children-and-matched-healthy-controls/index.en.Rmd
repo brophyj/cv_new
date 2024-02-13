@@ -218,12 +218,15 @@ include_graphics("images/table3.png")
 Looking at the confidence intervals we see they are very wide and, for example, don't exclude that for quartile 2 there is a 180% increase or 64% decrease in asthma prevalence compared to quartile 1. The authors have conflated ["**an absence of evidence with evidence of absence**"](https://pubmed.ncbi.nlm.nih.gov/7647644/).      
 The authors make the same error in Table 4
 
+
 ```{r out.width="50%"}
 include_graphics("images/table4.png")
 ```
+
 <br>
 when they conclude there are no interactions. The more reasonable conclusion being even if one ignores the potential biases, they lack sufficient power to draw conclusions about interactions.     
 
 ### Conclusion
 A critical appraisal of this publication has shown several interesting avenues for discussion, perhaps explaining why it was suggested for review. Based on the critical appraisal it would seem there is little to support  their original conclusions.
+
 

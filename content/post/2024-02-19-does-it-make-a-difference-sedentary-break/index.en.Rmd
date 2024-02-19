@@ -36,7 +36,7 @@ library(gt)
 
 ### Background
 
-Recall that the goal of the course is to not only improve critical appraisal skills but also to think about research questions, designs, and the necessary compromises that are often required in research.
+Recall that the goal of the 605 course is to not only improve critical appraisal skills but also to think about research questions, designs, and the necessary compromises that are often required in research.
 Hopefully this adds another dimension to typical journal clubs where either an article in uncritically endorsed enthusiastically or trashed unmercifully, although this is sometimes quite merited\
 <br> This week's selected article was the 2023 publication [Breaking Up Prolonged Sitting to Improve Cardiometabolic Risk: Dose–Response Analysis of a Randomized Crossover Trial](https://pubmed.ncbi.nlm.nih.gov/36728338/) concluding
 
